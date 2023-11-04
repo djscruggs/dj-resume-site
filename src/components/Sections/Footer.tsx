@@ -1,7 +1,7 @@
-import {BoltIcon, ChevronUpIcon} from '@heroicons/react/24/solid';
-import {FC, memo} from 'react';
+import { BoltIcon, ChevronUpIcon } from '@heroicons/react/24/solid';
+import { FC, memo } from 'react';
 
-import {SectionId} from '../../data/data';
+import { SectionId } from '../../data/data';
 import Socials from '../Socials';
 
 const Footer: FC = memo(() => (
@@ -26,7 +26,8 @@ const Footer: FC = memo(() => (
           <span className="italic text-yellow">Resume</span>
         </span>
       </a>
-      <span className="text-sm text-neutral-700">© Copyright 2022 Tim Baker</span>
+      <span className="text-sm text-neutral-700">© Copyright 2023 DJ Scruggs</span>
+      <a href="https://www.freepik.com/free-vector/comic-abstract-blue-background_7997344.htm#query=hero%20background&position=1&from_view=keyword&track=ais">Backgound image by dgim-studio</a> on Freepik
     </div>
   </div>
 ));
