@@ -13,7 +13,7 @@ import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
+import heroImage from '../images/hero.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -106,12 +106,12 @@ export const aboutData: About = {
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`,
   aboutItems: [
-    { label: 'Location', text: 'Victoria, BC', Icon: MapIcon },
-    { label: 'Age', text: '29', Icon: CalendarIcon },
-    { label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon },
-    { label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon },
-    { label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon },
-    { label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon },
+    { label: 'Location', text: 'Fayetteville, AR', Icon: MapIcon },
+    { label: 'Age', text: '55', Icon: CalendarIcon },
+    { label: 'Nationality', text: 'USA / Scottish', Icon: FlagIcon },
+    { label: 'Interests', text: 'Fiction, Animals, Social Scienes', Icon: SparklesIcon },
+    { label: 'Study', text: 'Northwestern University', Icon: AcademicCapIcon },
+    { label: 'Employment', text: 'Entrepreneur', Icon: BuildingOffice2Icon },
   ],
 };
 
@@ -120,19 +120,23 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Backend development',
     skills: [
       {
-        name: 'English',
-        level: 10,
+        name: 'Node.js',
+        level: 7,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'Ruby on Rails',
+        level: 8,
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'PHP',
+        level: 8,
+      },
+      {
+        name: 'Python',
+        level: 6,
       },
     ],
   },
@@ -141,49 +145,50 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'React',
-        level: 9,
+        level: 6,
       },
       {
         name: 'Typescript',
         level: 7,
       },
       {
-        name: 'GraphQL',
+        name: 'jQuery',
+        level: 8,
+      },
+      {
+        name: 'Mithril.js',
+        level: 6,
+      },
+    ],
+  },
+
+  {
+    name: 'Business',
+    skills: [
+      {
+        name: 'Finance & Accounting',
+        level: 8,
+      },
+      {
+        name: 'Public Speaking',
+        level: 7,
+      },
+      {
+        name: 'Sales',
         level: 6,
       },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Spoken languages',
     skills: [
       {
-        name: 'Node.js',
-        level: 8,
+        name: 'English',
+        level: 10,
       },
       {
-        name: 'Rust',
+        name: 'Spanish',
         level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
       },
     ],
   },
@@ -359,5 +364,5 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   { label: 'Github', Icon: GithubIcon, href: 'https://github.com/derekscruggs' },
-  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/djscruggs/' }
+  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/djscruggs/' },
 ];
