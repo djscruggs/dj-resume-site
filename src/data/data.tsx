@@ -9,10 +9,9 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+import SubstackIcon from '../components/Icon/SubstackIcon';
+import ThreadsIcon from '../components/Icon/ThreadsIcon';
 import heroImage from '../images/hero.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -69,7 +68,7 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm DJ Scruggs.`,
+  name: `Hi! I'm DJ.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -102,9 +101,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I'm a serial entrepreneur who thrives on solving problems with code. I've had some big wins, a few misses, and tons of learning experiences along the way. I'm pumped to keep going!`,
   aboutItems: [
     { label: 'Location', text: 'Fayetteville, AR', Icon: MapIcon },
     { label: 'Age', text: '55', Icon: CalendarIcon },
@@ -271,10 +268,11 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '1986-1990',
+    location: 'Northwestern University',
+    title: 'Bachelor of Science, Music Education',
+    content: <div><p>I decided by my senior year that I didn't want to teach, but NU is expensive so I took the degree and became one of those classic liberal arts major who had no idea what he wanted to do.</p>
+      <p>Luckily, I found out that I had a knack for computers and an entrepreneurial spirit.</p></div>
   },
   {
     date: 'March 2003',
@@ -316,20 +314,16 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Dan Ripoll',
+      text: "Derek is a great asset to any software development team. He's a bonafide team player, and commits himself 110%. My team and I were lucky to have someone of his caliber on board at Content BLVD. And I'd be honored to work with Derek in the future.",
+      image: 'https://media.licdn.com/dms/image/C5103AQHu3DU5eg---w/profile-displayphoto-shrink_200_200/0/1516317441322?e=1704326400&v=beta&t=y2Z5LBN1Jne40_wej7q4GBCSG0AywnUljIXTFqy5Fj4',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      name: 'Peter Klipfel',
+      text: 'Derek had a wide breadth of knowledge, and kept us focused on the technical tasks that drove the product forward.',
+      image: 'https://media.licdn.com/dms/image/D5635AQFNAsCPqrj6VQ/profile-framedphoto-shrink_200_200/0/1694808819316?e=1699664400&v=beta&t=6sJpCt_R76bBo_l-eqcqCTbdK9NeBybimXXcYCzawMM',
     },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-    },
+
   ],
 };
 
@@ -339,12 +333,17 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'I\'m always interested in hearing about new projects, so if you\'d like to chat please get in touch.',
   items: [
     {
       type: ContactType.Email,
       text: 'me@derekscruggs.com',
       href: 'mailto:me@derekscruggs.com',
+    },
+    {
+      type: ContactType.Phone,
+      text: '303-808-6614',
+      href: 'tel:303-808-6614',
     },
     {
       type: ContactType.Location,
@@ -365,4 +364,6 @@ export const contact: ContactSection = {
 export const socialLinks: Social[] = [
   { label: 'Github', Icon: GithubIcon, href: 'https://github.com/derekscruggs' },
   { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/djscruggs/' },
+  { label: 'Substack', Icon: SubstackIcon, href: 'https://www.linkedin.com/in/djscruggs/' },
+  { label: 'Threads', Icon: ThreadsIcon, href: 'https://www.threads.net/@derekscruggs' },
 ];
