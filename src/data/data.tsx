@@ -323,7 +323,7 @@ export const testimonial: TestimonialSection = {
     },
     {
       name: 'Peter Klipfel, direct report at StatsMix',
-      text: 'Derek had a wide breadth of knowledge, and kept us focused on the technical tasks that drove the product forward.',
+      text: 'DJ had a wide breadth of knowledge, and kept us focused on the technical tasks that drove the product forward.',
       image: 'https://media.licdn.com/dms/image/D5635AQFNAsCPqrj6VQ/profile-framedphoto-shrink_200_200/0/1694808819316?e=1699664400&v=beta&t=6sJpCt_R76bBo_l-eqcqCTbdK9NeBybimXXcYCzawMM',
     },
 
