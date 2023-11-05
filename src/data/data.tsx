@@ -13,7 +13,7 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import SubstackIcon from '../components/Icon/SubstackIcon';
 import ThreadsIcon from '../components/Icon/ThreadsIcon';
 import heroImage from '../images/hero.jpg';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+import porfolioImage1 from '../images/portfolio/portfolio-1.png';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
@@ -168,11 +168,11 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Public Speaking',
-        level: 7,
+        level: 8,
       },
       {
         name: 'Sales',
-        level: 6,
+        level: 7,
       },
     ],
   },
@@ -196,9 +196,9 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'SurveyGizmo (now Alchemer)',
+    description: 'Early contributor to code and sales, growing revenue from $130,000 to $3 million in two years',
+    url: 'https://surveygizmo.com/',
     image: porfolioImage1,
   },
   {
