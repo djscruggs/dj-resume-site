@@ -13,17 +13,17 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import SubstackIcon from '../components/Icon/SubstackIcon';
 import ThreadsIcon from '../components/Icon/ThreadsIcon';
 import heroImage from '../images/hero.jpg';
-import porfolioImage1 from '../images/portfolio/portfolio-1.png';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+import porfolioImage2 from '../images/portfolio/portfolio-2.png';
+import porfolioImage3 from '../images/portfolio/portfolio-3.gif';
+// import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+// import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+// import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
+// import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
+// import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+// import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
+// import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
+// import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -154,7 +154,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Mithril.js',
-        level: 6,
+        level: 8,
       },
     ],
   },
@@ -196,71 +196,71 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'SurveyGizmo (now Alchemer)',
-    description: 'Early contributor to code and sales, growing revenue from $130,000 to $3 million in two years',
-    url: 'https://surveygizmo.com/',
+    title: 'Cryptocurrencies and the Future of Capital',
+    description: 'Presentation at CrowdConverge 2018',
+    url: 'https://www.youtube.com/watch?v=I6lEePGdcJ8',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'SurveyGizmo',
+    description: 'Early contributor to code and sales, growing revenue from $130,000 to $3 million in two years (now Alchemer) ',
+    url: 'https://surveygizmo.com/',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'ContentBLVD',
+    description: 'CTO at innovative influencer marketplace. Built in Node with Mithril, CoffeeScript PostgreSQL, and jQuery',
+    url: 'https://web.archive.org/web/20150315001613/https://www.contentblvd.com/',
     image: porfolioImage3,
   },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
-  },
+  // {
+  //   title: 'Project title 4',
+  //   description: 'Give a short description of your project here.',
+  //   url: 'https://reactresume.com',
+  //   image: porfolioImage4,
+  // },
+  // {
+  //   title: 'Project title 5',
+  //   description: 'Give a short description of your project here.',
+  //   url: 'https://reactresume.com',
+  //   image: porfolioImage5,
+  // },
+  // {
+  //   title: 'Project title 6',
+  //   description: 'Give a short description of your project here.',
+  //   url: 'https://reactresume.com',
+  //   image: porfolioImage6,
+  // },
+  // {
+  //   title: 'Project title 7',
+  //   description: 'Give a short description of your project here.',
+  //   url: 'https://reactresume.com',
+  //   image: porfolioImage7,
+  // },
+  // {
+  //   title: 'Project title 8',
+  //   description: 'Give a short description of your project here.',
+  //   url: 'https://reactresume.com',
+  //   image: porfolioImage8,
+  // },
+  // {
+  //   title: 'Project title 9',
+  //   description: 'Give a short description of your project here.',
+  //   url: 'https://reactresume.com',
+  //   image: porfolioImage9,
+  // },
+  // {
+  //   title: 'Project title 10',
+  //   description: 'Give a short description of your project here.',
+  //   url: 'https://reactresume.com',
+  //   image: porfolioImage10,
+  // },
+  // {
+  //   title: 'Project title 11',
+  //   description: 'Give a short description of your project here.',
+  //   url: 'https://reactresume.com',
+  //   image: porfolioImage11,
+  // },
 ];
 
 /**
@@ -314,7 +314,7 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'Dan Ripoll',
+      name: 'Dan Ripoll, CEO, ContentBLVD',
       text: "Derek is a great asset to any software development team. He's a bonafide team player, and commits himself 110%. My team and I were lucky to have someone of his caliber on board at Content BLVD. And I'd be honored to work with Derek in the future.",
       image: 'https://media.licdn.com/dms/image/C5103AQHu3DU5eg---w/profile-displayphoto-shrink_200_200/0/1516317441322?e=1704326400&v=beta&t=y2Z5LBN1Jne40_wej7q4GBCSG0AywnUljIXTFqy5Fj4',
     },
@@ -364,6 +364,6 @@ export const contact: ContactSection = {
 export const socialLinks: Social[] = [
   { label: 'Github', Icon: GithubIcon, href: 'https://github.com/derekscruggs' },
   { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/djscruggs/' },
-  { label: 'Substack', Icon: SubstackIcon, href: 'https://www.linkedin.com/in/djscruggs/' },
+  { label: 'Substack', Icon: SubstackIcon, href: 'https://djscruggs.substack.com/' },
   { label: 'Threads', Icon: ThreadsIcon, href: 'https://www.threads.net/@derekscruggs' },
 ];
