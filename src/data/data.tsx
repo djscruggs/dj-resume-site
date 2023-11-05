@@ -16,7 +16,7 @@ import heroImage from '../images/hero.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.png';
 import porfolioImage3 from '../images/portfolio/portfolio-3.gif';
-// import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+import porfolioImage4 from '../images/portfolio/portfolio-4.png';
 // import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 // import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 // import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
@@ -195,6 +195,7 @@ export const skills: SkillGroup[] = [
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
+
   {
     title: 'Cryptocurrencies and the Future of Capital',
     description: 'Presentation at CrowdConverge 2018',
@@ -202,23 +203,25 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage1,
   },
   {
-    title: 'SurveyGizmo',
-    description: 'Early contributor to code and sales, growing revenue from $130,000 to $3 million in two years (now Alchemer) ',
-    url: 'https://surveygizmo.com/',
-    image: porfolioImage2,
-  },
-  {
     title: 'ContentBLVD',
     description: 'CTO at innovative influencer marketplace. Built in Node with Mithril, CoffeeScript PostgreSQL, and jQuery',
     url: 'https://web.archive.org/web/20150315001613/https://www.contentblvd.com/',
     image: porfolioImage3,
   },
-  // {
-  //   title: 'Project title 4',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage4,
-  // },
+  {
+    title: 'StatsMix',
+    description: 'CTO of TechStars company, built in Ruby on Rails, MySQL, jQuery, Highcharts',
+    url: 'https://web.archive.org/web/20110511191703/http://www.statsmix.com/',
+    image: porfolioImage4,
+  },
+  {
+    title: 'SurveyGizmo',
+    description: 'Fifth employee, doing everything from code to sales, growing revenue from $130,000 to $3 million in two years',
+    url: 'https://surveygizmo.com/',
+    image: porfolioImage2,
+  },
+
+
   // {
   //   title: 'Project title 5',
   //   description: 'Give a short description of your project here.',
@@ -319,7 +322,7 @@ export const testimonial: TestimonialSection = {
       image: 'https://media.licdn.com/dms/image/C5103AQHu3DU5eg---w/profile-displayphoto-shrink_200_200/0/1516317441322?e=1704326400&v=beta&t=y2Z5LBN1Jne40_wej7q4GBCSG0AywnUljIXTFqy5Fj4',
     },
     {
-      name: 'Peter Klipfel',
+      name: 'Peter Klipfel, direct report at StatsMix',
       text: 'Derek had a wide breadth of knowledge, and kept us focused on the technical tasks that drove the product forward.',
       image: 'https://media.licdn.com/dms/image/D5635AQFNAsCPqrj6VQ/profile-framedphoto-shrink_200_200/0/1694808819316?e=1699664400&v=beta&t=6sJpCt_R76bBo_l-eqcqCTbdK9NeBybimXXcYCzawMM',
     },
