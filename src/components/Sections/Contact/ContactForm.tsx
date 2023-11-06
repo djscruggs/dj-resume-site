@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 interface FormData {
   user_name: string;
   user_email: string;
+  phone: string;
   message: string;
   reply_to: string;
 }
@@ -13,8 +14,10 @@ const ContactForm: FC = memo(() => {
     () => ({
       user_name: '',
       user_email: '',
+      phone: '',
       message: '',
       reply_to: '',
+
     }),
     [],
   );
@@ -40,6 +43,8 @@ const ContactForm: FC = memo(() => {
        * This is a good starting point to wire up your form submission logic
        * */
       console.log('Data to send: ', data);
+      console.log(emailjs)
+
       emailjs.send('service_gd8ahdd', 'template_zs03dvf', data, 'CUs0nfElnWZlGwWWM')
 
     },
