@@ -1,5 +1,5 @@
-import {FC, memo, useCallback, useMemo, useState} from 'react';
 import emailjs from '@emailjs/browser';
+import {FC, memo, useCallback, useMemo, useState} from 'react';
 
 interface FormData {
   [key: string]: string | undefined;
@@ -42,7 +42,6 @@ const ContactForm: FC = memo(() => {
       data['reply_to'] = data['user_email'];
       emailjs.send('service_gd8ahdd', 'template_zs03dvf', data, 'CUs0nfElnWZlGwWWM')
       setMessage(`Thank you ${data.user_name} for your message`);
-
     },
     [data],
   );
@@ -51,7 +50,7 @@ const ContactForm: FC = memo(() => {
     'bg-neutral-700 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-orange-600 rounded-md placeholder:text-neutral-400 placeholder:text-sm text-neutral-200 text-sm';
 
   return (
-    <form id="sendEmail" className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
+    <form className="grid min-h-[320px] grid-cols-1 gap-y-4" id="sendEmail" method="POST" onSubmit={handleSendMessage}>
       {message !== '' && <div className="text-green-500">{message}</div>}
       <input
         className={inputClasses}
