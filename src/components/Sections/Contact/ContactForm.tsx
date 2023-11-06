@@ -1,16 +1,17 @@
 import {FC, memo, useCallback, useMemo, useState} from 'react';
+import emailjs from '@emailjs/browser';
 
 interface FormData {
-  name: string;
-  email: string;
+  user_name: string;
+  user_email: string;
   message: string;
 }
 
 const ContactForm: FC = memo(() => {
   const defaultData = useMemo(
     () => ({
-      name: '',
-      email: '',
+      from_name: '',
+      user_email: '',
       message: '',
     }),
     [],
@@ -32,10 +33,13 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
+      data['reply_to'] = data['user_email'];
       /**
        * This is a good starting point to wire up your form submission logic
        * */
       console.log('Data to send: ', data);
+      emailjs.send('service_gd8ahdd', 'template_zs03dvf', data, 'CUs0nfElnWZlGwWWM')
+
     },
     [data],
   );
@@ -44,16 +48,30 @@ const ContactForm: FC = memo(() => {
     'bg-neutral-700 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-orange-600 rounded-md placeholder:text-neutral-400 placeholder:text-sm text-neutral-200 text-sm';
 
   return (
-    <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
-      <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" />
+    <form id="sendEmail" className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
+      <input
+        className={inputClasses}
+        name="user_name"
+        onChange={onChange}
+        placeholder="Name"
+        required
+        type="text"
+      />
       <input
         autoComplete="email"
         className={inputClasses}
-        name="email"
+        name="user_email"
         onChange={onChange}
         placeholder="Email"
         required
         type="email"
+      />
+      <input
+        className={inputClasses}
+        name="phone"
+        onChange={onChange}
+        placeholder="Phone number"
+        type="text"
       />
       <textarea
         className={inputClasses}
