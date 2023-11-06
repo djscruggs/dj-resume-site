@@ -121,7 +121,7 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Node.js',
-        level: 7,
+        level: 8,
       },
       {
         name: 'Ruby on Rails',
@@ -216,7 +216,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'SurveyGizmo',
-    description: 'Fifth employee, doing everything from code to sales, growing revenue from $130,000 to $3 million in two years',
+    description: 'Fifth employee, doing everything from code to sales. Grew revenue from $130,000 to $3 million in two years',
     url: 'https://surveygizmo.com/',
     image: porfolioImage2,
   },
@@ -287,13 +287,12 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: '2017 - Present',
+    location: 'BlueSpruce Holdings',
+    title: 'Co-founder & Managing Partner',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Led the purchase, management and sale of 330 multifamily apartments. Handled all asset management, finance and investor relations. Implemented the <a className='underline' href='https://www.eosworldwide.com/'>EOS</a> system for business management. Automated our investor communications with ActiveCampaign, Zapier, Buildium, EZ Texting and more.
       </p>
     ),
   },
