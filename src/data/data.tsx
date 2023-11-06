@@ -104,7 +104,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm a serial entrepreneur who thrives on solving problems with code. I have multiple 8 figure exits, a few misses, and tons of learning experiences along the way. I love my work and expect to never completely retire.`,
+  description: `I'm a serial entrepreneur and full stack developer who thrives on solving problems with code. I have multiple 8 figure exits, a few misses, and tons of learning experiences along the way. I love my work and expect to never completely retire.`,
   aboutItems: [
     {label: 'Location', text: 'Fayetteville, AR', Icon: MapIcon},
     {label: 'Age', text: '55', Icon: CalendarIcon},
