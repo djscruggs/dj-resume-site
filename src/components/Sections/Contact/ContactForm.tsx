@@ -4,20 +4,20 @@ import emailjs from '@emailjs/browser';
 interface FormData {
   user_name: string;
   user_email: string;
-  phone: string;
-  message: string;
+  user_phone: string;
+  user_message: string;
   reply_to: string;
 }
 
 const ContactForm: FC = memo(() => {
+  const [message, setMessage] = useState('');
   const defaultData = useMemo(
     () => ({
       user_name: '',
       user_email: '',
-      phone: '',
-      message: '',
+      user_phone: '',
+      user_message: '',
       reply_to: '',
-
     }),
     [],
   );
@@ -40,6 +40,7 @@ const ContactForm: FC = memo(() => {
       event.preventDefault();
       data['reply_to'] = data['user_email'];
       emailjs.send('service_gd8ahdd', 'template_zs03dvf', data, 'CUs0nfElnWZlGwWWM')
+      setMessage(`Thank you ${data.user_name} for your message`);
 
     },
     [data],
@@ -50,6 +51,7 @@ const ContactForm: FC = memo(() => {
 
   return (
     <form id="sendEmail" className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
+      {message !== '' && <div className="text-green-500">{message}</div>}
       <input
         className={inputClasses}
         name="user_name"
@@ -69,7 +71,7 @@ const ContactForm: FC = memo(() => {
       />
       <input
         className={inputClasses}
-        name="phone"
+        name="user_phone"
         onChange={onChange}
         placeholder="Phone number"
         type="text"
@@ -77,7 +79,7 @@ const ContactForm: FC = memo(() => {
       <textarea
         className={inputClasses}
         maxLength={250}
-        name="message"
+        name="user_message"
         onChange={onChange}
         placeholder="Message"
         required
