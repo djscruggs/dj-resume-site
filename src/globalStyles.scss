@@ -6,18 +6,18 @@
   /* Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
     display: none;
-  }
+ }
 
   .no-scrollbar {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
-  }
+ }
 }
 
 @supports (-webkit-touch-callout: none) {
   .h-screen {
     height: -webkit-fill-available;
-  }
+ }
 }
 
 /* Global styles */

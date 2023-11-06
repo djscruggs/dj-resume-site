@@ -1,9 +1,9 @@
-import { FC, memo } from 'react';
+import {FC, memo} from 'react';
 
-import { education, experience, SectionId, skills } from '../../../data/data';
+import {education, experience, SectionId, skills} from '../../../data/data';
 import Section from '../../Layout/Section';
 import ResumeSection from './ResumeSection';
-import { SkillGroup } from './Skills';
+import {SkillGroup} from './Skills';
 import TimelineItem from './TimelineItem';
 
 const Resume: FC = memo(() => {
@@ -21,7 +21,9 @@ const Resume: FC = memo(() => {
           ))}
         </ResumeSection>
         <ResumeSection title="Skills">
-          <p className="pb-8">25 years of experience with software development in high pressure, resource-constrained startup environments</p>
+          <p className="pb-8">
+            25 years of experience with software development in high pressure, resource-constrained startup environments
+          </p>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {skills.map((skillgroup, index) => (
               <SkillGroup key={`${skillgroup.name}-${index}`} skillGroup={skillgroup} />
