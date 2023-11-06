@@ -2,6 +2,7 @@ import {FC, memo, useCallback, useMemo, useState} from 'react';
 import emailjs from '@emailjs/browser';
 
 interface FormData {
+  [key: string]: string | undefined;
   user_name: string;
   user_email: string;
   user_phone: string;
