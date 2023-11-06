@@ -5,14 +5,16 @@ interface FormData {
   user_name: string;
   user_email: string;
   message: string;
+  reply_to: string;
 }
 
 const ContactForm: FC = memo(() => {
   const defaultData = useMemo(
     () => ({
-      from_name: '',
+      user_name: '',
       user_email: '',
       message: '',
+      reply_to: '',
     }),
     [],
   );
