@@ -43,7 +43,7 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'DJ Scruggs\' Resume',
+  title: "DJ Scruggs' Resume",
   description: "Built with Tim Baker's react resume template",
 };
 
@@ -75,9 +75,12 @@ export const heroData: Hero = {
         I'm an Arkansas-based <strong className="text-stone-100">Full Stack Software Engineer</strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I like to walk my dog <strong className="text-stone-100">Monkey</strong>,
-        explore the hidden gems of <strong className="text-stone-100">Northwest Arkansas</strong>,
-        and maintain the <strong className="text-stone-100 underline"><a href="https://realweb3db.com/">Real Web3 database</a></strong>.
+        I like to walk my dog <strong className="text-stone-100">Monkey</strong>, explore the hidden gems of{' '}
+        <strong className="text-stone-100">Northwest Arkansas</strong>, and maintain the{' '}
+        <strong className="text-stone-100 underline">
+          <a href="https://realweb3db.com/">Real Web3 database</a>
+        </strong>
+        .
       </p>
     </>
   ),
@@ -103,12 +106,12 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `I'm a serial entrepreneur who thrives on solving problems with code. I've had some big wins, a few misses, and tons of learning experiences along the way. I'm pumped to keep going!`,
   aboutItems: [
-    { label: 'Location', text: 'Fayetteville, AR', Icon: MapIcon },
-    { label: 'Age', text: '55', Icon: CalendarIcon },
-    { label: 'Nationality', text: 'USA / Scottish', Icon: FlagIcon },
-    { label: 'Interests', text: 'Fiction, Animals, Social Scienes', Icon: SparklesIcon },
-    { label: 'Study', text: 'Northwestern University', Icon: AcademicCapIcon },
-    { label: 'Employment', text: 'Entrepreneur', Icon: BuildingOffice2Icon },
+    {label: 'Location', text: 'Fayetteville, AR', Icon: MapIcon},
+    {label: 'Age', text: '55', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'USA / Scottish', Icon: FlagIcon},
+    {label: 'Interests', text: 'Fiction, Animals, Social Scienes', Icon: SparklesIcon},
+    {label: 'Study', text: 'Northwestern University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Entrepreneur', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -195,7 +198,6 @@ export const skills: SkillGroup[] = [
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
-
   {
     title: 'Cryptocurrencies and the Future of Capital',
     description: 'Presentation at CrowdConverge 2018',
@@ -204,7 +206,8 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'ContentBLVD',
-    description: 'CTO at innovative influencer marketplace. Built in Node with Mithril, CoffeeScript PostgreSQL, and jQuery',
+    description:
+      'CTO at innovative influencer marketplace. Built in Node with Mithril, CoffeeScript PostgreSQL, and jQuery',
     url: 'https://web.archive.org/web/20150315001613/https://www.contentblvd.com/',
     image: porfolioImage3,
   },
@@ -216,54 +219,54 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'SurveyGizmo',
-    description: 'Fifth employee, doing everything from code to sales. Grew revenue from $130,000 to $3 million in two years',
+    description:
+      'Fifth employee, doing everything from code to sales. Built in PHP, Zend Framework and jQuery.',
     url: 'https://surveygizmo.com/',
     image: porfolioImage2,
   },
-
 
   // {
   //   title: 'Project title 5',
   //   description: 'Give a short description of your project here.',
   //   url: 'https://reactresume.com',
   //   image: porfolioImage5,
-  // },
+  //},
   // {
   //   title: 'Project title 6',
   //   description: 'Give a short description of your project here.',
   //   url: 'https://reactresume.com',
   //   image: porfolioImage6,
-  // },
+  //},
   // {
   //   title: 'Project title 7',
   //   description: 'Give a short description of your project here.',
   //   url: 'https://reactresume.com',
   //   image: porfolioImage7,
-  // },
+  //},
   // {
   //   title: 'Project title 8',
   //   description: 'Give a short description of your project here.',
   //   url: 'https://reactresume.com',
   //   image: porfolioImage8,
-  // },
+  //},
   // {
   //   title: 'Project title 9',
   //   description: 'Give a short description of your project here.',
   //   url: 'https://reactresume.com',
   //   image: porfolioImage9,
-  // },
+  //},
   // {
   //   title: 'Project title 10',
   //   description: 'Give a short description of your project here.',
   //   url: 'https://reactresume.com',
   //   image: porfolioImage10,
-  // },
+  //},
   // {
   //   title: 'Project title 11',
   //   description: 'Give a short description of your project here.',
   //   url: 'https://reactresume.com',
   //   image: porfolioImage11,
-  // },
+  //},
 ];
 
 /**
@@ -274,8 +277,15 @@ export const education: TimelineItem[] = [
     date: '1986-1990',
     location: 'Northwestern University',
     title: 'Bachelor of Science, Music Education',
-    content: <div><p>I decided by my senior year that I didn't want to teach, but NU is expensive so I took the degree and became one of those classic liberal arts major who had no idea what he wanted to do.</p>
-      <p>Luckily, I found out that I had a knack for computers and an entrepreneurial spirit.</p></div>
+    content: (
+      <div>
+        <p>
+          I decided by my senior year that I didn't want to teach, but NU is expensive so I took the degree and became
+          one of those classic liberal arts major who had no idea what he wanted to do.
+        </p>
+        <p>Luckily, I found out that I had a knack for computers and an entrepreneurial spirit.</p>
+      </div>
+    ),
   },
   {
     date: 'March 2003',
@@ -292,7 +302,13 @@ export const experience: TimelineItem[] = [
     title: 'Co-founder & Managing Partner',
     content: (
       <p>
-        Led the purchase, management and sale of 330 multifamily apartments. Handled all asset management, finance and investor relations. Implemented the <a className='underline' href='https://www.eosworldwide.com/'>EOS</a> system for business management. Automated our investor communications with ActiveCampaign, Zapier, Buildium, EZ Texting and more.
+        Led the purchase, management and sale of 330 multifamily apartments. Handled all asset management, finance and
+        investor relations. Implemented the{' '}
+        <a className="underline" href="https://www.eosworldwide.com/">
+          EOS
+        </a>{' '}
+        system for business management. Automated our investor communications with ActiveCampaign, Zapier, Buildium, EZ
+        Texting and more.
       </p>
     ),
   },
@@ -318,14 +334,15 @@ export const testimonial: TestimonialSection = {
     {
       name: 'Dan Ripoll, CEO, ContentBLVD',
       text: "Derek is a great asset to any software development team. He's a bonafide team player, and commits himself 110%. My team and I were lucky to have someone of his caliber on board at Content BLVD. And I'd be honored to work with Derek in the future.",
-      image: 'https://media.licdn.com/dms/image/C5103AQHu3DU5eg---w/profile-displayphoto-shrink_200_200/0/1516317441322?e=1704326400&v=beta&t=y2Z5LBN1Jne40_wej7q4GBCSG0AywnUljIXTFqy5Fj4',
+      image:
+        'https://media.licdn.com/dms/image/C5103AQHu3DU5eg---w/profile-displayphoto-shrink_200_200/0/1516317441322?e=1704326400&v=beta&t=y2Z5LBN1Jne40_wej7q4GBCSG0AywnUljIXTFqy5Fj4',
     },
     {
       name: 'Peter Klipfel, direct report at StatsMix',
       text: 'DJ had a wide breadth of knowledge, and kept us focused on the technical tasks that drove the product forward.',
-      image: 'https://media.licdn.com/dms/image/D5635AQFNAsCPqrj6VQ/profile-framedphoto-shrink_200_200/0/1694808819316?e=1699664400&v=beta&t=6sJpCt_R76bBo_l-eqcqCTbdK9NeBybimXXcYCzawMM',
+      image:
+        'https://media.licdn.com/dms/image/D5635AQFNAsCPqrj6VQ/profile-framedphoto-shrink_200_200/0/1694808819316?e=1699664400&v=beta&t=6sJpCt_R76bBo_l-eqcqCTbdK9NeBybimXXcYCzawMM',
     },
-
   ],
 };
 
@@ -335,7 +352,7 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'I\'m always interested in hearing about new projects, so if you\'d like to chat please get in touch.',
+  description: "I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.",
   items: [
     {
       type: ContactType.Email,
@@ -364,8 +381,8 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/derekscruggs' },
-  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/djscruggs/' },
-  { label: 'Substack', Icon: SubstackIcon, href: 'https://djscruggs.substack.com/' },
-  { label: 'Threads', Icon: ThreadsIcon, href: 'https://www.threads.net/@derekscruggs' },
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/derekscruggs'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/djscruggs/'},
+  {label: 'Substack', Icon: SubstackIcon, href: 'https://djscruggs.substack.com/'},
+  {label: 'Threads', Icon: ThreadsIcon, href: 'https://www.threads.net/@derekscruggs'},
 ];
