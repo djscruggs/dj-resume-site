@@ -356,8 +356,8 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'me@derekscruggs.com',
-      href: 'mailto:me@derekscruggs.com',
+      text: 'me@djscruggs.com',
+      href: 'mailto:me@djscruggs.com',
     },
     {
       type: ContactType.Phone,
