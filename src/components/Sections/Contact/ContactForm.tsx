@@ -95,5 +95,4 @@ const ContactForm: FC = memo(() => {
   );
 });
 
-ContactForm.displayName = 'ContactForm';
 export default ContactForm;

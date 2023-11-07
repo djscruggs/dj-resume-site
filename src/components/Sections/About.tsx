@@ -37,5 +37,5 @@ const About: FC = memo(() => {
   );
 });
 
-About.displayName = 'About';
+
 export default About;

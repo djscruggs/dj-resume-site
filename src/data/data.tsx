@@ -55,7 +55,7 @@ export const SectionId = {
   About: 'about',
   Contact: 'contact',
   Portfolio: 'portfolio',
-  Resume: 'resume',
+  'Work History': 'work History',
   Skills: 'skills',
   Stats: 'stats',
   Testimonials: 'testimonials',
@@ -87,7 +87,7 @@ export const heroData: Hero = {
   actions: [
     {
       href: '/assets/DJ Scruggs resume.pdf',
-      text: 'Resume',
+      text: 'Resume (PDF)',
       primary: true,
       Icon: ArrowDownTrayIcon,
     },
@@ -104,7 +104,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm a serial entrepreneur and full stack developer who thrives on solving problems with code. I have multiple 8 figure exits, a few misses, and tons of learning experiences along the way. I love my work and expect to never completely retire.`,
+  description: `I'm a serial entrepreneur and full stack developer who thrives on solving problems with code. I have multiple eight-figure exits, a few misses, and tons of learning experiences along the way. I love my work and expect to never completely retire.`,
   aboutItems: [
     {label: 'Location', text: 'Fayetteville, AR', Icon: MapIcon},
     {label: 'Age', text: '55', Icon: CalendarIcon},
@@ -283,15 +283,21 @@ export const education: TimelineItem[] = [
           I decided by my senior year that I didn't want to teach, but NU is expensive so I took the degree and became
           one of those classic liberal arts major who had no idea what he wanted to do.
         </p>
-        <p>Luckily, I found out that I had a knack for computers and an entrepreneurial spirit.</p>
+        <p>Luckily, I found out that I have an entrepreneurial instinct and a knack for computers.</p>
       </div>
     ),
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2003',
+    location: 'Sandler Sales Institute',
+    title: 'Submarine Sales Methodology',
+    content: (
+      <div>
+        <p>
+          Innovative sales method that trained me to, above all, not act like a salesman. See <a className="textblue underline" href="https://www.derekscruggs.com/up-front-contracts.html">this post</a> on my blog about one key concept, the <span className="italic">Up Front Contract</span>.
+        </p>
+      </div>
+    ),
   },
 ];
 
@@ -314,8 +320,86 @@ export const experience: TimelineItem[] = [
   },
   {
     date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    location: 'Content BLVD',
+    title: 'CTO',
+    content: (
+      <p>
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
+      </p>
+    ),
+  },
+
+  {
+    date: 'March 2007 - February 2010',
+    location: 'Staunch Robots',
+    title: 'VP Services',
+    content: (
+      <p>
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
+      </p>
+    ),
+  },
+  {
+    date: 'March 2007 - February 2010',
+    location: 'Avenir International',
+    title: 'CTO',
+    content: (
+      <p>
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
+      </p>
+    ),
+  },
+  {
+    date: 'March 2007 - February 2010',
+    location: 'StatsMix',
+    title: 'CTO',
+    content: (
+      <p>
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
+      </p>
+    ),
+  },
+  {
+    date: 'March 2007 - February 2010',
+    location: 'SurveyGizmo',
+    title: 'VP Sales and Business Development',
+    content: (
+      <p>
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
+      </p>
+    ),
+  },
+  {
+    date: '2005 - 2007',
+    location: 'Enthusiast Group',
+    title: 'CEO & Co-Founder',
+    content: (
+      <p>
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
+      </p>
+    ),
+  },
+  {
+    date: '1999 - 2001',
+    location: 'MessageMedia',
+    title: 'Chief Privacy Officer',
+    content: (
+      <p>
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
+      </p>
+    ),
+  },
+  {
+    date: '1996 - 1999',
+    location: 'Distributed Bits',
+    title: 'CEO & Co-Founder',
     content: (
       <p>
         Describe work, special projects, notable achievements, what technologies you have been working with, and

@@ -4,5 +4,5 @@ const Base: FC = memo(() => {
   return <></>;
 });
 
-Base.displayName = 'Base';
+
 export default Base;
