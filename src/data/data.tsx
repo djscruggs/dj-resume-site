@@ -383,6 +383,6 @@ export const contact: ContactSection = {
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/derekscruggs'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/djscruggs/'},
-  {label: 'Substack', Icon: SubstackIcon, href: 'https://djscruggs.substack.com/'},
+  {label: 'Substack', Icon: SubstackIcon, href: 'https://oldprogrammer.substack.com/'},
   {label: 'Threads', Icon: ThreadsIcon, href: 'https://www.threads.net/@derekscruggs'},
 ];
