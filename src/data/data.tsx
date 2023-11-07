@@ -270,7 +270,7 @@ export const portfolioItems: PortfolioItem[] = [
 ];
 
 /**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
+ * Work History section 
  */
 export const education: TimelineItem[] = [
   {
