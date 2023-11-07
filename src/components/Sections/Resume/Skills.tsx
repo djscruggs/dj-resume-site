@@ -16,7 +16,6 @@ export const SkillGroup: FC<PropsWithChildren<{skillGroup: SkillGroupType}>> = m
   );
 });
 
-SkillGroup.displayName = 'SkillGroup';
 
 export const Skill: FC<{skill: SkillType}> = memo(({skill}) => {
   const {name, level, max = 10} = skill;
@@ -32,4 +31,3 @@ export const Skill: FC<{skill: SkillType}> = memo(({skill}) => {
   );
 });
 
-Skill.displayName = 'Skill';
