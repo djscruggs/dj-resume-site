@@ -324,8 +324,7 @@ export const experience: TimelineItem[] = [
     title: 'CTO',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Managed the complete product lifecycle for an influencer marketplace. Oversaw strategic planning, resolved tech issues, and delivered a viable product in just 5 months (succeeding when two predecessors failed). Migrated prototype from Moveable Type to use Node and PostgreSQL backend with Mithril/Coffeescript front end.
       </p>
     ),
   },
