@@ -102,18 +102,28 @@ export const heroData: Hero = {
 /**
  * About section
  */
+//calculate age from now so I don't have to edit it every birthday
+//taken from https://stackoverflow.com/questions/55200748/calculate-age-from-date-of-birth-user-input-value-in-react
+const calculate_age = (dob: string) => {
+  const birthDate = new Date(dob);
+  const difference = Date.now() - birthDate.getTime();
+  const age = new Date(difference);
+  return Math.abs(age.getUTCFullYear() - 1970);
+}
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm a serial entrepreneur and full stack developer who thrives on solving problems with code. I have multiple eight-figure exits, a few misses, and tons of learning experiences along the way. I love my work and expect to never completely retire.`,
+  description: `I'm a serial entrepreneur and full stack developer who thrives on solving problems with code. I have multiple eight-figure exits and tons of learning experiences along the way. I love my work and expect to never completely retire.`,
   aboutItems: [
     {label: 'Location', text: 'Fayetteville, AR', Icon: MapIcon},
-    {label: 'Age', text: '55', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'USA / Scottish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Fiction, Animals, Social Scienes', Icon: SparklesIcon},
+    {label: 'Age', text: calculate_age('1968-07-19').toString(), Icon: CalendarIcon},
+    {label: 'Nationality', text: 'USA', Icon: FlagIcon},
+    {label: 'Interests', text: 'Writing, Music, Social Scienes', Icon: SparklesIcon},
     {label: 'Study', text: 'Northwestern University', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Entrepreneur', Icon: BuildingOffice2Icon},
   ],
 };
+
+
 
 /**
  * Skills section
@@ -207,13 +217,13 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'ContentBLVD',
     description:
-      'CTO at innovative influencer marketplace. Built in Node with Mithril, CoffeeScript PostgreSQL, and jQuery',
+      'Chief Technical Officer at innovative influencer marketplace. Built in Node with Mithril, CoffeeScript PostgreSQL, and jQuery',
     url: 'https://web.archive.org/web/20150315001613/https://www.contentblvd.com/',
     image: porfolioImage3,
   },
   {
     title: 'StatsMix',
-    description: 'CTO of TechStars company, built in Ruby on Rails, MySQL, jQuery, Highcharts',
+    description: 'Chief Technical Officer of TechStars company, built in Ruby on Rails, MySQL, jQuery, Highcharts',
     url: 'https://web.archive.org/web/20110511191703/http://www.statsmix.com/',
     image: porfolioImage4,
   },
@@ -321,7 +331,7 @@ export const experience: TimelineItem[] = [
   {
     date: 'March 2007 - February 2010',
     location: 'Content BLVD',
-    title: 'CTO',
+    title: 'Chief Technical Officer',
     content: (
       <p>
         Managed the complete product lifecycle for an influencer marketplace. Oversaw strategic planning, resolved tech issues, and delivered a viable product in just 5 months (succeeding when two predecessors failed). Migrated prototype from Moveable Type to use Node and PostgreSQL backend with Mithril/Coffeescript front end.
@@ -332,33 +342,32 @@ export const experience: TimelineItem[] = [
   {
     date: 'March 2007 - February 2010',
     location: 'Staunch Robots',
-    title: 'VP Services',
+    title: 'VP of Services',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Led project management and development for four Ruby on Rails projects.
       </p>
     ),
   },
   {
     date: 'March 2007 - February 2010',
     location: 'Avenir International',
-    title: 'CTO',
+    title: 'Chief Technical Officer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Led all technical development of a SaaS providing time- and role-based paging for hospital staff to be contacted for urgent critical care tasks.
+        Underlying technology included Ruby on Rails, PostgreSQL, Cisco IP Phones and Twilio.
       </p>
     ),
   },
   {
     date: 'March 2007 - February 2010',
     location: 'StatsMix',
-    title: 'CTO',
+    title: 'Chief Technical Officer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Led all technical development of a SaaS providing custom analytics integrated with third party analytics tools such as Google Analytics, Mailchimp and dozens of others.
+        Core technology included Ruby on Rails, MySQL, jQuery, Highcharts and web APIs.
       </p>
     ),
   },
@@ -368,19 +377,17 @@ export const experience: TimelineItem[] = [
     title: 'VP Sales and Business Development',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Led sales during explosive growth period from $130,000 to $3 million in just two years. Also developed several key platform elements such as SalesForce integration and entirely re-wrote the billin system.
       </p>
     ),
   },
   {
     date: '2005 - 2007',
     location: 'Enthusiast Group',
-    title: 'CEO & Co-Founder',
+    title: 'Co-Founder',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Created a B2C media platform for extreme sports enthusiasts. Core technology included MySQL, Drupal, PHP and JavaScript.
       </p>
     ),
   },
@@ -390,8 +397,8 @@ export const experience: TimelineItem[] = [
     title: 'Chief Privacy Officer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Devised and enforced spam-prevention policies for one of the first email marketig companies. Led a PR and marekting initiative
+        to highlight the company's thought leadership in permission marketing, leading us to win major enterprise accounts such as Cisco Systems and Dell Computer.
       </p>
     ),
   },
@@ -401,8 +408,8 @@ export const experience: TimelineItem[] = [
     title: 'CEO & Co-Founder',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Created the first email customer service platform, landing major clients such as Consumer Reports and the Chicago Board Options Exchange.
+        The company was acquired by MessageMedia, providing a 700% return to investors in two years.
       </p>
     ),
   },
@@ -454,8 +461,8 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Github,
-      text: 'derekscruggs',
-      href: 'https://github.com/derekscruggs',
+      text: 'djscruggs',
+      href: 'https://github.com/djscruggs',
     },
   ],
 };
@@ -464,7 +471,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/derekscruggs'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/djscruggs'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/djscruggs/'},
   {label: 'Substack', Icon: SubstackIcon, href: 'https://oldprogrammer.substack.com/'},
   {label: 'Threads', Icon: ThreadsIcon, href: 'https://www.threads.net/@derekscruggs'},
