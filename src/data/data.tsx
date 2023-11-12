@@ -340,7 +340,7 @@ export const experience: TimelineItem[] = [
   {
     date: 'March 2007 - February 2010',
     location: 'Staunch Robots',
-    title: 'VP of Services',
+    title: 'VP Services',
     content: (
       <p>
         Led project management and development for four Ruby on Rails projects.
