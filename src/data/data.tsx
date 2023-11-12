@@ -423,13 +423,13 @@ export const testimonial: TestimonialSection = {
       name: 'Dan Ripoll, CEO, ContentBLVD',
       text: "DJ is a great asset to any software development team. He's a bonafide team player, and commits himself 110%. My team and I were lucky to have someone of his caliber on board at Content BLVD. And I'd be honored to work with DJ in the future.",
       image:
-        'https://media.licdn.com/dms/image/C5103AQHu3DU5eg---w/profile-displayphoto-shrink_200_200/0/1516317441322?e=1704326400&v=beta&t=y2Z5LBN1Jne40_wej7q4GBCSG0AywnUljIXTFqy5Fj4',
+        '/assets/dan-ripoll.jpeg',
     },
     {
       name: 'Peter Klipfel, direct report at StatsMix',
       text: 'DJ had a wide breadth of knowledge, and kept us focused on the technical tasks that drove the product forward.',
       image:
-        'https://media.licdn.com/dms/image/D5635AQFNAsCPqrj6VQ/profile-framedphoto-shrink_200_200/0/1694808819316?e=1699664400&v=beta&t=6sJpCt_R76bBo_l-eqcqCTbdK9NeBybimXXcYCzawMM',
+        '/assets/peter-klipfel.png',
     },
   ],
 };
