@@ -216,13 +216,13 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'ContentBLVD',
-    // description: 'Chief Technical Officer at ContentBLVD.',
+    // description: 'Chief Technology Officer at Content BLVD.',
     url: 'https://web.archive.org/web/20150315001613/https://www.contentblvd.com/',
     image: porfolioImage3,
   },
   {
     title: 'StatsMix',
-    // description: 'Chief Technical Officer at StatsMix',
+    // description: 'Chief Technology Officer at StatsMix',
     url: 'https://web.archive.org/web/20110511191703/http://www.statsmix.com/',
     image: porfolioImage4,
   },
@@ -329,7 +329,7 @@ export const experience: TimelineItem[] = [
   {
     date: 'March 2007 - February 2010',
     location: 'Content BLVD',
-    title: 'Chief Technical Officer',
+    title: 'Chief Technology Officer',
     content: (
       <p>
         Managed the complete product lifecycle for an influencer marketplace. Oversaw strategic planning, resolved tech issues, and delivered a viable product in just 5 months (succeeding when two predecessors failed). Migrated prototype from Moveable Type to use Node and PostgreSQL backend with Mithril/Coffeescript front end.
@@ -350,7 +350,7 @@ export const experience: TimelineItem[] = [
   {
     date: 'March 2007 - February 2010',
     location: 'Avenir International',
-    title: 'Chief Technical Officer',
+    title: 'Chief Technology Officer',
     content: (
       <p>
         Led all technical development of a SaaS providing time- and role-based paging for hospital staff to be contacted for urgent critical care tasks.
@@ -361,7 +361,7 @@ export const experience: TimelineItem[] = [
   {
     date: 'March 2007 - February 2010',
     location: 'StatsMix',
-    title: 'Chief Technical Officer',
+    title: 'Chief Technology Officer',
     content: (
       <p>
         Led all technical development of a SaaS providing custom analytics integrated with third party analytics tools such as Google Analytics, Mailchimp and dozens of others.
