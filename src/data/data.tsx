@@ -209,28 +209,26 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Cryptocurrencies and the Future of Capital',
-    description: 'Presentation at CrowdConverge 2018',
+    title: 'CrowdConverge 2018',
+    // description: 'Presentation at CrowdConverge 2018',
     url: 'https://www.youtube.com/watch?v=I6lEePGdcJ8',
     image: porfolioImage1,
   },
   {
     title: 'ContentBLVD',
-    description:
-      'Chief Technical Officer at innovative influencer marketplace. Built in Node with Mithril, CoffeeScript PostgreSQL, and jQuery',
+    // description: 'Chief Technical Officer at ContentBLVD.',
     url: 'https://web.archive.org/web/20150315001613/https://www.contentblvd.com/',
     image: porfolioImage3,
   },
   {
     title: 'StatsMix',
-    description: 'Chief Technical Officer of TechStars company, built in Ruby on Rails, MySQL, jQuery, Highcharts',
+    // description: 'Chief Technical Officer at StatsMix',
     url: 'https://web.archive.org/web/20110511191703/http://www.statsmix.com/',
     image: porfolioImage4,
   },
   {
     title: 'SurveyGizmo',
-    description:
-      'Fifth employee, doing everything from code to sales. Built in PHP, Zend Framework and jQuery.',
+    // description: '(Acquired and renamed Alchemer)',
     url: 'https://surveygizmo.com/',
     image: porfolioImage2,
   },
@@ -377,7 +375,7 @@ export const experience: TimelineItem[] = [
     title: 'VP Sales and Business Development',
     content: (
       <p>
-        Led sales during explosive growth period from $130,000 to $3 million in just two years. Also developed several key platform elements such as SalesForce integration and entirely re-wrote the billin system.
+        Led sales during explosive growth period from $130,000 to $3 million in just two years. Also developed several key platform elements such as SalesForce integration, and entirely re-wrote the billing system. Core technology included PHP, MySQL, Zend Framework and web APIs.
       </p>
     ),
   },
@@ -387,28 +385,28 @@ export const experience: TimelineItem[] = [
     title: 'Co-Founder',
     content: (
       <p>
-        Created a B2C media platform for extreme sports enthusiasts. Core technology included MySQL, Drupal, PHP and JavaScript.
+        Created a B2C media platform for extreme sports enthusiasts. Core technology included PHP, MySQL, Drupal and JavaScript.
       </p>
     ),
   },
   {
-    date: '1999 - 2001',
+    date: '1998 - 2001',
     location: 'MessageMedia',
     title: 'Chief Privacy Officer',
     content: (
       <p>
-        Devised and enforced spam-prevention policies for one of the first email marketig companies. Led a PR and marekting initiative
+        Devised and enforced spam-prevention policies for one of the first email marketig companies. Led a PR and marketing initiative
         to highlight the company's thought leadership in permission marketing, leading us to win major enterprise accounts such as Cisco Systems and Dell Computer.
       </p>
     ),
   },
   {
-    date: '1996 - 1999',
+    date: '1996 - 1998',
     location: 'Distributed Bits',
     title: 'CEO & Co-Founder',
     content: (
       <p>
-        Created the first email customer service platform, landing major clients such as Consumer Reports and the Chicago Board Options Exchange.
+        Created the industry's first email customer service platform, landing major clients such as Consumer Reports and the Chicago Board Options Exchange.
         The company was acquired by MessageMedia, providing a 700% return to investors in two years.
       </p>
     ),
