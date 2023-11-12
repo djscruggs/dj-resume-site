@@ -364,7 +364,7 @@ export const experience: TimelineItem[] = [
     title: 'Chief Technology Officer',
     content: (
       <p>
-        Led all technical development of a SaaS providing custom analytics integrated with third party analytics tools such as Google Analytics, Mailchimp and dozens of others.
+        Led all technical development of a SaaS providing custom analytics integrated with third party reporting tools such as Google Analytics, Mailchimp and dozens of others.
         Core technology included Ruby on Rails, MySQL, jQuery, Highcharts and web APIs.
       </p>
     ),
