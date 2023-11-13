@@ -378,7 +378,7 @@ export const experience: TimelineItem[] = [
     title: 'Co-Founder',
     content: (
       <p>
-        Created a B2C media platform for extreme sports enthusiasts. Core technology included PHP, MySQL, Drupal and JavaScript.
+        Created a B2C social media platform for extreme sports enthusiasts. Core technology included PHP, MySQL, Drupal and JavaScript.
       </p>
     ),
   },
@@ -388,7 +388,7 @@ export const experience: TimelineItem[] = [
     title: 'Chief Privacy Officer',
     content: (
       <p>
-        Devised and enforced spam-prevention policies for one of the first email marketig companies. Led a PR and marketing initiative
+        Devised and enforced spam-prevention policies for one of the first email marketing companies. Led a PR and marketing initiative
         to highlight the company's thought leadership in permission marketing, leading us to win major enterprise accounts such as Cisco Systems and Dell Computer.
       </p>
     ),
