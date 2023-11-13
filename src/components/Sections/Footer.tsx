@@ -26,7 +26,7 @@ const Footer: FC = memo(() => (
         className="-m-2 flex items-center gap-x-1 rounded-md p-2 ring-yellow focus:outline-none focus:ring-2"
         href="https://github.com/tbakerx/react-resume-template">
         <span>
-          Built using <span className="text-white">React Resume Template</span>
+          Built on <span className="text-white">React Resume Template</span>
         </span>
       </a>
       <span className="text-sm text-neutral-700">© Copyright {year} DJ Scruggs</span>
