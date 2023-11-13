@@ -48,7 +48,7 @@ export const SectionId = {
   About: 'about',
   Contact: 'contact',
   Portfolio: 'portfolio',
-  'Work History': 'work History',
+  Work: 'work',
   Skills: 'skills',
   Stats: 'stats',
   Testimonials: 'testimonials',
@@ -78,6 +78,11 @@ export const heroData: Hero = {
     </>
   ),
   actions: [
+    {
+      href: `#${SectionId.Work}`,
+      text: 'Work History',
+      primary: false,
+    },
     {
       href: '/assets/DJ Scruggs resume.pdf',
       text: 'Resume (PDF)',
@@ -271,7 +276,7 @@ export const portfolioItems: PortfolioItem[] = [
 ];
 
 /**
- * Work History section 
+ * Education section 
  */
 export const education: TimelineItem[] = [
   {
