@@ -71,8 +71,8 @@ export const heroData: Hero = {
         I like to walk my dog <strong className="text-stone-100">Monkey</strong>, explore the hidden gems of{' '}
         <strong className="text-stone-100">Northwest Arkansas</strong>, and write the{' '}
         <strong className="text-stone-100 underline">
-          <a href="https://oldprogrammer.substack.com/">Old Programmer</a> newsletter.
-        </strong>
+          <a href="https://oldprogrammer.substack.com/">Old Programmer</a>
+        </strong> newsletter on Substack.
         .
       </p>
     </>
