@@ -5,8 +5,8 @@ import {SectionId} from '../../data/data';
 import Socials from '../Socials';
 
 //calculate  copyright year 
-let year = new Date().getFullYear()
-if (year > 2023) {
+let year = new Date().getFullYear().toString()
+if (year !== '2023') {
   year = "2023 - " + year.toString();
 }
 const Footer: FC = memo(() => (
