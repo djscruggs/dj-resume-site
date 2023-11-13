@@ -311,7 +311,7 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: '2017 - Present',
+    date: '2017 - 2023',
     location: 'BlueSpruce Holdings',
     title: 'Co-founder & Managing Partner',
     content: (
@@ -327,7 +327,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'March 2007 - February 2010',
+    date: 'March 2015 - June 2017',
     location: 'Content BLVD',
     title: 'Chief Technology Officer',
     content: (
@@ -338,7 +338,7 @@ export const experience: TimelineItem[] = [
   },
 
   {
-    date: 'March 2007 - February 2010',
+    date: 'August 2014 - March 2015',
     location: 'Staunch Robots',
     title: 'VP Services',
     content: (
@@ -348,7 +348,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'March 2007 - February 2010',
+    date: 'January 2014 - August 2014',
     location: 'Avenir International',
     title: 'Chief Technology Officer',
     content: (
@@ -359,7 +359,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'March 2007 - February 2010',
+    date: 'October 2010 - January 2013',
     location: 'StatsMix',
     title: 'Chief Technology Officer',
     content: (
@@ -370,7 +370,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'March 2007 - February 2010',
+    date: 'January 2008 - August 2010',
     location: 'SurveyGizmo',
     title: 'VP Sales and Business Development',
     content: (
@@ -380,7 +380,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: '2005 - 2007',
+    date: 'March 2006 - November 2007',
     location: 'Enthusiast Group',
     title: 'Co-Founder',
     content: (
@@ -390,7 +390,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: '1998 - 2001',
+    date: 'December 1998 - December 2001',
     location: 'MessageMedia',
     title: 'Chief Privacy Officer',
     content: (
@@ -401,7 +401,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: '1996 - 1998',
+    date: 'March 1996 - December 1998',
     location: 'Distributed Bits',
     title: 'CEO & Co-Founder',
     content: (
