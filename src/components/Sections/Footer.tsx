@@ -1,4 +1,4 @@
-import {BoltIcon, ChevronUpIcon} from '@heroicons/react/24/solid';
+import {ChevronUpIcon} from '@heroicons/react/24/solid';
 import {FC, memo} from 'react';
 
 import {SectionId} from '../../data/data';
@@ -26,14 +26,13 @@ const Footer: FC = memo(() => (
         className="-m-2 flex items-center gap-x-1 rounded-md p-2 ring-yellow focus:outline-none focus:ring-2"
         href="https://github.com/tbakerx/react-resume-template">
         <span>
-          Built on <span className="text-white">React Resume Template</span>
+          Built using <span className="text-white">React Resume Template</span>
         </span>
       </a>
       <span className="text-sm text-neutral-700">© Copyright {year} DJ Scruggs</span>
       <a href="https://www.freepik.com/free-vector/comic-abstract-blue-background_7997344.htm#query=hero%20background&position=1&from_view=keyword&track=ais">
-        Backgound image by dgim-studio
-      </a>{' '}
-      on Freepik
+        Backgound image by dgim-studio on Freepik
+      </a>
     </div>
   </div>
 ));
