@@ -69,9 +69,9 @@ export const heroData: Hero = {
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I like to walk my dog <strong className="text-stone-100">Monkey</strong>, explore the hidden gems of{' '}
-        <strong className="text-stone-100">Northwest Arkansas</strong>, and maintain the{' '}
+        <strong className="text-stone-100">Northwest Arkansas</strong>, and write the{' '}
         <strong className="text-stone-100 underline">
-          <a href="https://realweb3db.com/">Real Web3 database</a>
+          <a href="https://oldprogrammer.substack.com/">Old Programmer</a> newsletter.
         </strong>
         .
       </p>
