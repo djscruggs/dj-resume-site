@@ -282,9 +282,8 @@ export const education: TimelineItem[] = [
       <div>
         <p>
           I decided by my senior year that I didn't want to teach, but NU is expensive so I took the degree and became
-          one of those classic liberal arts major who had no idea what he wanted to do.
+          one of those classic liberal arts major who had no idea what he wanted to do. Luckily I discovered I have an entrepreneurial instinct and a knack for computers.
         </p>
-        <p>Luckily, I found out that I have an entrepreneurial instinct and a knack for computers.</p>
       </div>
     ),
   },
@@ -388,7 +387,7 @@ export const experience: TimelineItem[] = [
     title: 'Chief Privacy Officer',
     content: (
       <p>
-        Devised and enforced spam-prevention policies for one of the first email marketing companies. Led a PR and marketing initiative
+        Devised and enforced spam-prevention policies for one of the first email marketing companies. Devised and executed a PR and marketing initiative
         to highlight the company's thought leadership in permission marketing, leading us to win major enterprise accounts such as Cisco Systems and Dell Computer.
       </p>
     ),
