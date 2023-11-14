@@ -25,7 +25,9 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
         {/* Open Graph : https://ogp.me/ */}
         <meta content={title} property="og:title" />
         <meta content={description} property="og:description" />
-        <meta content={ogImageUrl} property="og:image" />
+        if(ogImageUrl) {
+          <meta content={ogImageUrl.src} property="og:image" />
+        }
         <meta content={`https://djscruggs.com${pathname}`} property="og:url" />
 
         {/* Twitter: https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup */}

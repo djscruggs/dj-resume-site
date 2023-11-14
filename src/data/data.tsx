@@ -31,7 +31,6 @@ import {
   TestimonialSection,
   TimelineItem,
 } from './dataDef';
-
 /**
  * Page meta data
  */

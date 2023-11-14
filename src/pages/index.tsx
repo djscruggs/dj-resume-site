@@ -17,7 +17,7 @@ const Header = dynamic(() => import('../components/Sections/Header'), {ssr: fals
 const Home: FC = memo(() => {
   const {title, description, ogImageUrl} = homePageMeta;
   return (
-    <Page description={description} title={title} ogImageUrl={ogImageUrl.src}>
+    <Page description={description} title={title} ogImageUrl={ogImageUrl}>
       <Header />
       <Hero />
       <About />
