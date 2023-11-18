@@ -6,8 +6,9 @@ import {memo, PropsWithChildren} from 'react';
 import {HomepageMeta} from '../../data/dataDef';
 
 
-const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, description, ogImageUrl}) => {
+const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, description}) => {
   const {asPath: pathname} = useRouter();
+
   return (
     <>
       <Head>
@@ -25,9 +26,7 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
         {/* Open Graph : https://ogp.me/ */}
         <meta content={title} property="og:title" />
         <meta content={description} property="og:description" />
-        if(ogImageUrl) {
-          <meta content={ogImageUrl.src} property="og:image" />
-        }
+        <meta content="/_next/static/media/profilepic.e5a902f0.jpg" property="og:image" />
         <meta content={`https://djscruggs.com${pathname}`} property="og:url" />
 
         {/* Twitter: https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup */}

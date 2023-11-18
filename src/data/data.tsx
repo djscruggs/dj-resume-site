@@ -37,7 +37,6 @@ import {
 export const homePageMeta: HomepageMeta = {
   title: "DJ Scruggs' Resume",
   description: "Summary of skills and work history",
-  ogImageUrl: profilepic
 };
 
 /**
