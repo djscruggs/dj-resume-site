@@ -1,0 +1,172 @@
+{
+  "workExperience": [
+    {
+      "title": "Founding Member",
+      "company": "Generalist World",
+      "employmentType": "Self-employed",
+      "startDate": "Oct 2022",
+      "endDate": "Present",
+      "duration": "1 yr 2 mos",
+      "location": "Remote",
+      "description": "The global launchpad for generalists; community, opportunity and resource all under the one roof.",
+      "skills": [
+        "Customer Experience",
+        "Entrepreneurship",
+        "Leadership"
+      ]
+    },
+    {
+      "title": "Managing Partner",
+      "company": "BlueSpruce Holdings",
+      "startDate": "Jun 2017",
+      "endDate": "Jun 2023",
+      "duration": "6 yrs 1 mo",
+      "location": "Greater Denver Area",
+      "description": "Acquisition and management of cash-flow producing multifamily properties in emerging markets. Shared opportunities with investors for real estate capitalization. Focused on professionalism, integrity, and speed in all endeavors.",
+      "skills": [
+        "Customer Experience",
+        "Entrepreneurship",
+        "Leadership"
+      ]
+    },
+    {
+      "title": "Podcast Host",
+      "company": "The Creative Real Estate Podcast",
+      "startDate": "Sep 2017",
+      "endDate": "Nov 2021",
+      "duration": "4 yrs 3 mos",
+      "description": "Hosted The Creative Real Estate Podcast.",
+      "skills": []
+    },
+    {
+      "title": "Real Estate Investor",
+      "company": "DJ Pays Cash",
+      "employmentType": "Self-employed",
+      "startDate": "Jan 2017",
+      "endDate": "Nov 2021",
+      "duration": "4 yrs 11 mos",
+      "location": "Denver",
+      "description": "Wholesaled, fixed, and flipped single-family homes, as well as managed rentals throughout the Front Range.",
+      "skills": [
+        "Entrepreneurship"
+      ]
+    },
+    {
+      "title": "CTO",
+      "company": "Content BLVD",
+      "startDate": "Mar 2015",
+      "endDate": "Jun 2017",
+      "duration": "2 yrs 4 mos",
+      "location": "Boulder, CO",
+      "description": "Managed complete product lifecycle for a web application. Oversaw strategic planning, resolved tech issues, and delivered a viable product. Supported financial planning, advised on estimated costs, served as product and project manager, and built a platform for the startup.",
+      "skills": [
+        "Software Development",
+        "Technology Management",
+        "Leadership",
+        "Product Management"
+      ]
+    },
+    {
+      "title": "VP Services",
+      "company": "Staunch Robots",
+      "startDate": "Aug 2014",
+      "endDate": "Mar 2015",
+      "duration": "8 mos",
+      "location": "Boulder, CO",
+      "description": "Developed and managed client projects including web application development, content management system, ecommerce system, and crowd-sourced marketing content platform. Managed project administration, resource allocation, and customer relationship management.",
+      "skills": [
+        "Software Development",
+        "Technology Management",
+        "Customer Experience",
+        "Leadership"
+      ]
+    },
+    {
+      "title": "CTO",
+      "company": "Avenir International",
+      "startDate": "Jan 2014",
+      "endDate": "Aug 2014",
+      "duration": "8 mos",
+      "location": "Broomfield, CO",
+      "description": "Led technical product development, converted telecom product from on-premises software to SaaS. Upgraded web interface, added support for two-way texting between practitioners.",
+      "skills": [
+        "Software Development",
+        "Technology Management",
+        "Entrepreneurship",
+        "Product Management"
+      ]
+    },
+    {
+      "title": "CTO",
+      "company": "StatsMix",
+      "startDate": "Oct 2010",
+      "endDate": "Jan 2013",
+      "duration": "2 yrs 4 mos",
+      "location": "Boulder, CO",
+      "description": "Led development and launch of a B2B SaaS analytics platform. Added new features, aligned product roadmap with customer needs, and defined/implemented business development strategies.",
+      "skills": [
+        "Software Development",
+        "Technology Management",
+        "Entrepreneurship",
+        "Product Management"
+      ]
+    },
+    {
+      "title": "VP Sales & Business Development",
+      "company": "SurveyGizmo",
+      "startDate": "Jan 2008",
+      "endDate": "Aug 2010",
+      "duration": "2 yrs 8 mos",
+      "description": "Developed sales strategies, managed marketing automation, produced webinars/YouTube videos, led user testing, and contributed to revenue growth and capital raising.",
+      "skills": [
+        "Software Development",
+        "Customer Experience",
+        "Entrepreneurship"
+      ]
+    },
+    {
+      "title": "CEO",
+      "company": "Enthusiast Group",
+      "startDate": "Mar 2006",
+      "endDate": "Nov 2007",
+      "duration": "1 yr 9 mos",
+      "description": "Involved in software development, Drupal, customer experience, entrepreneurship, leadership, and product management.",
+      "skills": [
+        "Software Development",
+        "Drupal",
+        "Customer Experience",
+        "Entrepreneurship",
+        "Leadership",
+        "Product Management"
+      ]
+    },
+    {
+      "title": "Chief Privacy Officer",
+      "company": "MessageMedia",
+      "startDate": "Jan 1999",
+      "endDate": "Dec 2001",
+      "duration": "3 yrs",
+      "description": "Focused on customer experience and privacy-related roles.",
+      "skills": [
+        "Customer Experience"
+      ]
+    },
+    {
+      "title": "CEO & Co-Founder",
+      "company": "Distributed Bits",
+      "startDate": "Jan 1996",
+      "endDate": "Dec 1998",
+      "duration": "3 yrs",
+      "location": "Chicago",
+      "description": "Involved in software development, technology management, customer experience, entrepreneurship, leadership, and product management.",
+      "skills": [
+        "Software Development",
+        "Technology Management",
+        "Customer Experience",
+        "Entrepreneurship",
+        "Leadership",
+        "Product Management"
+      ]
+    }
+  ]
+}
