@@ -66,8 +66,8 @@
       }
     ],
     "object-curly-spacing": [
-      "error",
-      "never"
+      "warn",
+      "always"
     ],
     "react/jsx-curly-brace-presence": [
       1,
