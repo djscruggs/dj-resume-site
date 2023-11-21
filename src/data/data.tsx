@@ -72,7 +72,6 @@ export const heroData: Hero = {
         <strong className="text-stone-100 underline">
           <a href="https://oldprogrammer.substack.com/">Old Programmer</a>
         </strong> newsletter on Substack.
-        .
       </p>
     </>
   ),
@@ -111,12 +110,12 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `I'm a serial entrepreneur and full stack developer who thrives on solving problems with code. I have multiple eight-figure exits and tons of learning experiences along the way. I love my work and expect to never completely retire.`,
   aboutItems: [
-    {label: 'Location', text: 'Fayetteville, AR', Icon: MapIcon},
-    {label: 'Age', text: calculate_age('1968-07-19').toString(), Icon: CalendarIcon},
-    {label: 'Nationality', text: 'USA', Icon: FlagIcon},
-    {label: 'Interests', text: 'Writing, Music, Social Scienes', Icon: SparklesIcon},
-    {label: 'Study', text: 'Northwestern University', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Entrepreneur', Icon: BuildingOffice2Icon},
+    { label: 'Location', text: 'Fayetteville, AR', Icon: MapIcon },
+    { label: 'Age', text: calculate_age('1968-07-19').toString(), Icon: CalendarIcon },
+    { label: 'Nationality', text: 'USA', Icon: FlagIcon },
+    { label: 'Interests', text: 'Writing, Music, Social Scienes', Icon: SparklesIcon },
+    { label: 'Study', text: 'Northwestern University', Icon: AcademicCapIcon },
+    { label: 'Employment', text: 'Entrepreneur', Icon: BuildingOffice2Icon },
   ],
 };
 
@@ -465,8 +464,8 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/djscruggs'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/djscruggs/'},
-  {label: 'Substack', Icon: SubstackIcon, href: 'https://oldprogrammer.substack.com/'},
-  {label: 'Threads', Icon: ThreadsIcon, href: 'https://www.threads.net/@derekscruggs'},
+  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/djscruggs' },
+  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/djscruggs/' },
+  { label: 'Substack', Icon: SubstackIcon, href: 'https://oldprogrammer.substack.com/' },
+  { label: 'Threads', Icon: ThreadsIcon, href: 'https://www.threads.net/@derekscruggs' },
 ];
