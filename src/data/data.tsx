@@ -60,7 +60,7 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `Hi! I'm DJ.`,
+  name: `Hi, I'm DJ!`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -417,8 +417,12 @@ export const testimonial: TestimonialSection = {
     {
       name: 'Dan Ripoll, CEO, ContentBLVD',
       text: "DJ is a great asset to any software development team. He's a bonafide team player, and commits himself 110%. My team and I were lucky to have someone of his caliber on board at Content BLVD. And I'd be honored to work with DJ in the future.",
-      image:
-        '/assets/dan-ripoll.jpeg',
+      image: '/assets/dan-ripoll.jpg',
+    },
+    {
+      name: "Robin Diebel",
+      text: "During my time working closely with DJ at BlueSpruce, I had the opportunity to witness his exceptional leadership and organizational skills firsthand. His ability to effectively lead and inspire a team was truly commendable. DJ consistently demonstrated a strong vision for the company and effectively communicated it to the entire team, fostering a sense of purpose and motivation among employees.",
+      image: 'assets/robin-diebel.jpg'
     },
     {
       name: 'Peter Klipfel, direct report at StatsMix',
