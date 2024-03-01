@@ -1,6 +1,6 @@
 {
-  "homepage": "https://djscruggs.github.io/derekscruggs.github.io",
-  "name": "react-resume-template",
+  "homepage": "https://djscruggs.com/",
+  "name": "dj-scruggs-resume",
   "version": "2.0.0",
   "private": true,
   "scripts": {
