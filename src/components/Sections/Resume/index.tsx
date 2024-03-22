@@ -17,7 +17,7 @@ const Resume: FC = memo(() => {
         </ResumeSection>
         <ResumeSection title="Skills">
           <p className="pb-8">
-            25 years of experience with software development in high pressure, resource-constrained startup environments
+            25 years of experience with software development in high-pressure, resource-constrained startups
           </p>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {skills.map((skillgroup, index) => (
