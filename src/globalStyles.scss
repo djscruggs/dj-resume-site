@@ -25,6 +25,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+a {
+  text-decoration: underline;
+  color: #0070f3;
+}
 
 html {
   -webkit-tap-highlight-color: transparent;
