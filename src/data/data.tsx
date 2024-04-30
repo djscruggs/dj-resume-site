@@ -268,7 +268,7 @@ export const experience: TimelineItem[] = [
     location: 'Open source projects',
     title: 'Freelance',
     content: (
-      <p>
+      <div>
         Working on two open source projects that I built from scratch.
         <ul>
           <li>
@@ -279,7 +279,7 @@ export const experience: TimelineItem[] = [
           </li>
         </ul>
         
-      </p>
+      </div>
     ),
   },
   {
