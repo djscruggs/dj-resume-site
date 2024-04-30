@@ -135,7 +135,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Ruby on Rails',
-        level: 10,
+        level: 8,
       },
       {
         name: 'PHP',
@@ -263,6 +263,25 @@ export const education: TimelineItem[] = [
 ];
 
 export const experience: TimelineItem[] = [
+  {
+    date: '2023 - present',
+    location: 'Open source projects',
+    title: 'Freelance',
+    content: (
+      <p>
+        Working on two open source projects that I built from scratch.
+        <ul>
+          <li>
+            <a href="https://github.com/djscruggs/aptrs-react">APTRS</a> - React front-end to a Python API for penetration testing. Uses Vite, Tailwind CSS, Material-Tailwind theme
+          </li>
+          <li>
+            <a href="https://github.com/djscruggs/trybe">Trybe</a> -  a full stack PWA built in Remix with Prisma/Supabase as back end and Fly.io for deployment
+          </li>
+        </ul>
+        
+      </p>
+    ),
+  },
   {
     date: '2017 - 2023',
     location: 'BlueSpruce Holdings',
