@@ -9,8 +9,8 @@ module.exports = {
       },
       keyframes: {
         typing: {
-          '0%, 100%': {width: '0%'},
-          '30%, 70%': {width: '100%'},
+          '0%, 100%': { width: '0%' },
+          '30%, 70%': { width: '100%' },
         },
         blink: {
           '0%': {
@@ -29,7 +29,7 @@ module.exports = {
         },
       },
       screens: {
-        touch: {raw: 'only screen and (pointer: coarse)'},
+        touch: { raw: 'only screen and (pointer: coarse)' },
       },
     },
   },

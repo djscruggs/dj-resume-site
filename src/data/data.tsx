@@ -269,11 +269,11 @@ export const experience: TimelineItem[] = [
     title: 'Freelance',
     content: (
       <div>
-        <p style={{marginBottom:1+'rem'}}>
+        <p style={{ marginBottom:1+'rem' }}>
           Working on two open source projects that I built from scratch.
         </p>
         <ul>
-          <li style={{marginBottom:'0.5rem'}}>
+          <li style={{ marginBottom:'0.5rem' }}>
             <a className='underline' href="https://github.com/djscruggs/aptrs-react">APTRS</a> - React front-end to a Python API for penetration testing. Uses Vite, Tailwind CSS, Material-Tailwind theme
           </li>
           <li>
