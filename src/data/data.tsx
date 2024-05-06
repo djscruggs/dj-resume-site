@@ -269,13 +269,15 @@ export const experience: TimelineItem[] = [
     title: 'Freelance',
     content: (
       <div>
-        Working on two open source projects that I built from scratch.
+        <p style={{marginBottom:1+'rem'}}>
+          Working on two open source projects that I built from scratch.
+        </p>
         <ul>
-          <li>
+          <li style={{marginBottom:'0.5rem'}}>
             <a className='underline' href="https://github.com/djscruggs/aptrs-react">APTRS</a> - React front-end to a Python API for penetration testing. Uses Vite, Tailwind CSS, Material-Tailwind theme
           </li>
           <li>
-            <a className='underline' href="https://github.com/djscruggs/trybe">Trybe</a> -  a full stack PWA built in Remix with Prisma/Supabase as back end and Fly.io for deployment
+            <a className='underline' href="https://github.com/djscruggs/trybe">TRYBE</a> -  a full stack PWA built in Remix with Prisma/Supabase as back end and Fly.io for deployment
           </li>
         </ul>
         
