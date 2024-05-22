@@ -14,7 +14,6 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import SubstackIcon from '../components/Icon/SubstackIcon';
 import ThreadsIcon from '../components/Icon/ThreadsIcon';
 import heroImage from '../images/hero.jpg';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.png';
 import porfolioImage3 from '../images/portfolio/portfolio-3.png';
 import porfolioImage4 from '../images/portfolio/portfolio-4.png'; 
@@ -217,12 +216,6 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://github.com/djscruggs/aptrs-react',
     image: porfolioImage6,
   },
-  // {
-  //   title: 'CrowdConverge 2018',
-  //   // description: 'Presentation at CrowdConverge 2018',
-  //   url: 'https://www.youtube.com/watch?v=I6lEePGdcJ8',
-  //   image: porfolioImage1,
-  // },
   {
     title: 'ContentBLVD',
     // description: 'Chief Technology Officer at Content BLVD.',
