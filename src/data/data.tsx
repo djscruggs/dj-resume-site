@@ -17,7 +17,9 @@ import heroImage from '../images/hero.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.png';
 import porfolioImage3 from '../images/portfolio/portfolio-3.png';
-import porfolioImage4 from '../images/portfolio/portfolio-4.png';
+import porfolioImage4 from '../images/portfolio/portfolio-4.png'; 
+import porfolioImage5 from '../images/portfolio/portfolio-5.png';
+import porfolioImage6 from '../images/portfolio/portfolio-6.png';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -206,11 +208,21 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'CrowdConverge 2018',
-    // description: 'Presentation at CrowdConverge 2018',
-    url: 'https://www.youtube.com/watch?v=I6lEePGdcJ8',
-    image: porfolioImage1,
+    title: 'TRYBE Personal Development',
+    url: 'https://github.com/djscruggs/trybe',
+    image: porfolioImage5,
   },
+  {
+    title: 'Automated Pentration Testing Reporting System',
+    url: 'https://github.com/djscruggs/aptrs-react',
+    image: porfolioImage6,
+  },
+  // {
+  //   title: 'CrowdConverge 2018',
+  //   // description: 'Presentation at CrowdConverge 2018',
+  //   url: 'https://www.youtube.com/watch?v=I6lEePGdcJ8',
+  //   image: porfolioImage1,
+  // },
   {
     title: 'ContentBLVD',
     // description: 'Chief Technology Officer at Content BLVD.',
