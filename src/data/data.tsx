@@ -66,7 +66,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className='text-3xl font-bold text-stone-50'>I thrive in the gap between <span className='text-yellow'>people</span> and <br />the <span className='text-yellow'>value</span> they seek from <span className='text-yellow'>software</span>. </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg w-2/3">
         I'm an Arkansas-based <strong className="text-stone-100">Full Stack Software Engineer</strong>.
         I like to walk my dog <strong className="text-stone-100">Monkey</strong>, explore the hidden gems of{' '}
         <strong className="text-stone-100">Northwest Arkansas</strong>, and write the{' '}
@@ -109,7 +109,7 @@ const calculate_age = (dob: string) => {
 }
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm a serial entrepreneur and full stack developer who thrives on solving problems with code. I have multiple eight-figure exits and tons of learning experiences along the way. I love my work and expect to never completely retire.`,
+  description: `I'm a full stack developer who excels at solving problems with code. I have multiple eight-figure exits and tons of learning experiences along the way. I love my work and expect to never completely retire.`,
   aboutItems: [
     { label: 'Location', text: 'Fayetteville, AR', Icon: MapIcon },
     { label: 'Age', text: calculate_age('1968-07-19').toString(), Icon: CalendarIcon },
