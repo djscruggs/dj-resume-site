@@ -65,10 +65,9 @@ export const heroData: Hero = {
   name: `Hi, I'm DJ!`,
   description: (
     <>
+      <p className='text-3xl font-bold text-stone-50'>I thrive in the gap between <span className='text-yellow'>people</span> and <br />the <span className='text-yellow'>value</span> they seek from <span className='text-yellow'>software</span>. </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm an Arkansas-based <strong className="text-stone-100">Full Stack Software Engineer</strong>.
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I like to walk my dog <strong className="text-stone-100">Monkey</strong>, explore the hidden gems of{' '}
         <strong className="text-stone-100">Northwest Arkansas</strong>, and write the{' '}
         <strong className="text-stone-100 underline">
