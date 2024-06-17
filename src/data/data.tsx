@@ -71,7 +71,7 @@ export const heroData: Hero = {
         I like to walk my dog <strong className="text-stone-100">Monkey</strong>, explore the hidden gems of{' '}
         <strong className="text-stone-100">Northwest Arkansas</strong>, and write the{' '}
         <strong className="text-stone-100 underline">
-          <a href="https://oldprogrammer.substack.com/">Old Programmer</a>
+          <a href="https://djcodes.substack.com/">DJ Codes</a>
         </strong> newsletter on Substack.
       </p>
     </>
@@ -454,6 +454,6 @@ export const socialLinks: Social[] = [
   { label: 'Github', Icon: GithubIcon, href: 'https://github.com/djscruggs' },
   { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/djscruggs/' },
   { label: 'Hashnode', Icon: HashnodeIcon, href: 'https://djscruggs.hashnode.dev/' },
-  { label: 'Substack', Icon: SubstackIcon, href: 'https://oldprogrammer.substack.com/' },
+  { label: 'Substack', Icon: SubstackIcon, href: 'https://djcodes.substack.com/' },
   { label: 'Threads', Icon: ThreadsIcon, href: 'https://www.threads.net/@derekscruggs' },
 ];
