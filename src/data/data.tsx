@@ -284,6 +284,9 @@ export const experience: TimelineItem[] = [
             <a className='underline' href="https://github.com/djscruggs/trybe">TRYBE</a> -  a full stack PWA built in Remix with Prisma/Supabase as back end and Fly.io for deployment
           </li>
         </ul>
+        <p style={{ marginBottom:1+'rem', marginTop:1+'rem' }}>
+          Also assisting <a className='underline' href="https://buildcities.network/">BuildCities.network</a> with their decentralized funding platform.
+        </p>
         
       </div>
     ),
