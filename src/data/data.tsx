@@ -12,7 +12,6 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import HashnodeIcon from '../components/Icon/HashnodeIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import SubstackIcon from '../components/Icon/SubstackIcon';
-import ThreadsIcon from '../components/Icon/ThreadsIcon';
 import heroImage from '../images/hero.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.png';
 import porfolioImage3 from '../images/portfolio/portfolio-3.png';
@@ -458,5 +457,4 @@ export const socialLinks: Social[] = [
   { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/djscruggs/' },
   { label: 'Hashnode', Icon: HashnodeIcon, href: 'https://djscruggs.hashnode.dev/' },
   { label: 'Substack', Icon: SubstackIcon, href: 'https://djcodes.substack.com/' },
-  { label: 'Threads', Icon: ThreadsIcon, href: 'https://www.threads.net/@derekscruggs' },
 ];
