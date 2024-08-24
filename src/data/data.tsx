@@ -66,9 +66,9 @@ export const heroData: Hero = {
     <>
       <p className='text-3xl font-bold text-stone-50'>I thrive in the gap between <span className='text-yellow'>people</span> and <br />the <span className='text-yellow'>value</span> they seek from <span className='text-yellow'>software</span>. </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg w-2/3">
-        I'm an Arkansas-based <strong className="text-stone-100">Full Stack Software Engineer</strong>.
-        I like to walk my dog <strong className="text-stone-100">Monkey</strong>, explore the hidden gems of{' '}
-        <strong className="text-stone-100">Northwest Arkansas</strong>, and write the{' '}
+        I'm a <strong className="text-stone-100">serial entrepreneur with multiple exits</strong> and a <strong>full stack software engineer</strong> in Northwest Arkansas.
+      
+        In my spare time I like to walk my dog <strong className="text-stone-100">Monkey</strong>, and write the{' '}
         <strong className="text-stone-100 underline">
           <a href="https://djcodes.substack.com/">DJ Codes</a>
         </strong> newsletter on Substack.
