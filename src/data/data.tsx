@@ -211,7 +211,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Automated Pentration Testing Reporting System',
-    url: 'https://github.com/djscruggs/aptrs-react',
+    url: 'https://github.com/APTRS/APTRS/releases/tag/1.0',
     image: porfolioImage6,
   },
   {
