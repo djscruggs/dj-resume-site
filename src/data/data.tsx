@@ -400,6 +400,12 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
+      name: 'Sourav Kalal, Engineer lead on APTRS',
+      text: 'Working with DJ on APTRS was such a fantastic experience! He took the lead on building the entire frontend from the ground up and wowed us all with his amazing skills while adding great features. DJ\'s technical know-how and knack for solving problems made a huge difference in tackling the challenges we faced, and thanks to his hard work, we got the project out on time. It was truly a joy to collaborate with DJ on this project!',
+      image:
+        '/assets/sourav-kalal.jpeg',
+    },
+    {
       name: 'Dan Ripoll, CEO, ContentBLVD',
       text: "DJ is a great asset to any software development team. He's a bonafide team player, and commits himself 110%. My team and I were lucky to have someone of his caliber on board at Content BLVD. And I'd be honored to work with DJ in the future.",
       image: '/assets/dan-ripoll.jpg',
