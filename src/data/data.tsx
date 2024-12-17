@@ -400,7 +400,13 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'Sourav Kalal, Engineer lead on APTRS',
+      name: 'Tameem Rahal, founder of Trybe',
+      text: 'DJ has been a fantastic asset to our startup as we build towards an MVP. He\'s fully led the development of our web app, helping us productize our online community into a service we can scale and offer to others. I appreciate the tools he\'s implemented for us to help make the iterative process easy and manageable, and being able to adapt to new ideas and point out holes in our design. We\'re eager to see the final MVP come to life and are very happy with having DJ lead its development. Not to mention, he\'s a great human to chat and work with, which always makes the process even better. Thanks DJ!',
+      image:
+        '/assets/tameem-rahal.jpg',
+    },
+    {
+      name: 'Sourav Kalal, Engineering lead on APTRS',
       text: 'Working with DJ on APTRS was such a fantastic experience! He took the lead on building the entire frontend from the ground up and wowed us all with his amazing skills while adding great features. DJ\'s technical know-how and knack for solving problems made a huge difference in tackling the challenges we faced, and thanks to his hard work, we got the project out on time. It was truly a joy to collaborate with DJ on this project!',
       image:
         '/assets/sourav-kalal.jpeg',
@@ -420,7 +426,7 @@ export const testimonial: TestimonialSection = {
       text: 'DJ had a wide breadth of knowledge, and kept us focused on the technical tasks that drove the product forward.',
       image:
         '/assets/peter-klipfel.png',
-    },
+    }
   ],
 };
 
