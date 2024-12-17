@@ -458,6 +458,11 @@ export const contact: ContactSection = {
       text: 'djscruggs',
       href: 'https://github.com/djscruggs',
     },
+    {
+      type: ContactType.LinkedIn,
+      text: 'Connect on LinkedIn',
+      href: 'https://www.linkedin.com/in/djscruggs/',
+    },
   ],
 };
 
