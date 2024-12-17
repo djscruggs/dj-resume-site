@@ -400,7 +400,7 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'Tameem Rahal, founder of Trybe',
+      name: 'Tameem Rahal, founder of TRYBE',
       text: 'DJ has been a fantastic asset to our startup as we build towards an MVP. He\'s fully led the development of our web app, helping us productize our online community into a service we can scale and offer to others. I appreciate the tools he\'s implemented for us to help make the iterative process easy and manageable, and being able to adapt to new ideas and point out holes in our design. We\'re eager to see the final MVP come to life and are very happy with having DJ lead its development. Not to mention, he\'s a great human to chat and work with, which always makes the process even better. Thanks DJ!',
       image:
         '/assets/tameem-rahal.jpg',
