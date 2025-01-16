@@ -27,6 +27,7 @@ import {
   Hero,
   HomepageMeta,
   PortfolioItem,
+  RatesSection,
   SkillGroup,
   Social,
   TestimonialSection,
@@ -37,7 +38,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: "DJ Scruggs' Resume",
-  description: "Summary of skills and work history",
+  description: "Summary of skills, rates, and work history",
 };
 
 /**
@@ -48,6 +49,7 @@ export const SectionId = {
   About: 'about',
   Contact: 'contact',
   Portfolio: 'portfolio',
+  Rates: 'rates',
   Work: 'work',
   Skills: 'skills',
   Stats: 'stats',
@@ -108,7 +110,7 @@ const calculate_age = (dob: string) => {
 }
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm a full stack developer who excels at solving problems with code. I have multiple eight-figure exits and tons of learning experiences along the way. I love to work and expect to never stop hacking code.`,
+  description: `I'm a full stack developer and digital strategist who excels at solving problems with code. I have multiple eight-figure exits and tons of learning experiences along the way. I love to work and expect to never stop hacking code.`,
   aboutItems: [
     { label: 'Location', text: 'Fayetteville, AR', Icon: MapIcon },
     { label: 'Age', text: calculate_age('1968-07-19').toString(), Icon: CalendarIcon },
@@ -427,6 +429,36 @@ export const testimonial: TestimonialSection = {
       image:
         '/assets/peter-klipfel.png',
     }
+  ],
+};
+
+/**
+ * Rates section
+ */
+export const rates: RatesSection = {
+  title: 'Rates',
+  description: 'I offer three levels of engagement. Rates are based on the number of hours per month and and the nature of the work. These rates are adjustable based on the exact scope of your project.',
+  items: [
+    {
+      title: 'Strategist',
+      hoursPerMonth: '10 hours per month',
+      description: 'I serve as your technical advisor, focusing on high-level technology decisions and roadmapping. I help your business evaluate its tech stack, identify opportunities for innovation, and make informed decisions about technology investments without getting involved in day-to-day implementation',
+      rate: '$200 per hour',
+    },
+    {
+      title: 'Senior Developer',
+      hoursPerMonth: '40 hours per month',
+      description: 'I work directly with your development teams as a hands-on technical leader to improve code quality, implement best practices, and solve complex technical challenges. I provide technical mentorship and help establish coding standards while actively participating in development tasks.',
+      rate: '$100 per hour',
+    },
+    {
+      title: 'CTO',
+      hoursPerMonth: '80 hours per month',
+      description: 'I provide comprehensive technology leadership that combines strategic planning with operational oversight. I manage technology budgets, lead technical teams, establish technology governance, and align technical initiatives with business objectives. I act as a bridge between your technical teams and executive leadership while ensuring your company\'s technical vision is executed effectively. ',
+      rate: '$150 per hour',
+    },
+    
+    
   ],
 };
 
