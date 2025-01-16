@@ -79,8 +79,13 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: `#${SectionId.Work}`,
-      text: 'Work History',
+      href: `#${SectionId.Portfolio}`,
+      text: 'Portfolio',
+      primary: false,
+    },
+    {
+      href: `#${SectionId.Rates}`,
+      text: 'Rates',
       primary: false,
     },
     {
