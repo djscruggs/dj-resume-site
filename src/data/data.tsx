@@ -115,7 +115,7 @@ const calculate_age = (dob: string) => {
 }
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm a digital strategist, fractional CTO and full stack developer who excels at solving problems with code. I have multiple eight-figure exits and tons of learning experiences along the way. I love to work and expect to never stop building things.`,
+  description: `I'm a digital strategist, real estate investor, fractional CTO and full stack developer who excels at solving problems with code. I have multiple eight-figure exits and tons of learning experiences along the way. I love to work and expect to never stop building things.`,
   aboutItems: [
     { label: 'Location', text: 'Fayetteville, AR', Icon: MapIcon },
     { label: 'Age', text: calculate_age('1968-07-19').toString(), Icon: CalendarIcon },
