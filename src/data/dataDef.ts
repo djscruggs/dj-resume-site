@@ -109,6 +109,22 @@ export interface Testimonial {
 }
 
 /**
+ * Rates section
+ */
+export interface RatesSection {
+  title: string;
+  description: string;
+  items: RateItem[];
+}
+
+export interface RateItem {
+  title: string;
+  hoursPerMonth: string;
+  description: string;
+  rate: string;
+}
+
+/**
  * Contact section
  */
 export interface ContactSection {
