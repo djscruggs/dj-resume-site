@@ -1,4 +1,3 @@
-import classNames from 'classnames';
 import { FC, memo } from 'react';
 
 import { rates, SectionId } from '../../data/data';
