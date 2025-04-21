@@ -280,7 +280,7 @@ export const experience: TimelineItem[] = [
     content: (
       <div>
         <p style={{ marginBottom:1+'rem' }}>
-          Penelope Trunk is a well-known blogger who writes about careers, personal development and autism. I am building a new email marketing platform and migrating her blog from WP Engine to a VPS on DigitalOcean.
+          <a className='underline' href="https://penelopetrunk.com/" target="_blank">Penelope Trunk</a> is a well-known blogger who writes about careers, personal development and autism. I am building a new email marketing platform and migrating her blog from WP Engine to a VPS on DigitalOcean.
         </p>
         <ul>
           <li style={{ marginBottom:'0.5rem', marginLeft: '1rem', listStyleType: 'disc',  paddingLeft: '.5rem' }}>
