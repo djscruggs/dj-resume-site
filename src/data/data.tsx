@@ -120,7 +120,7 @@ export const aboutData: About = {
     { label: 'Location', text: 'Fayetteville, AR', Icon: MapIcon },
     { label: 'Age', text: calculate_age('1968-07-19').toString(), Icon: CalendarIcon },
     { label: 'Nationality', text: 'USA', Icon: FlagIcon },
-    { label: 'Interests', text: 'Writing, Music, Social Scienes', Icon: SparklesIcon },
+    { label: 'Interests', text: 'Writing, Music, Social Sciences', Icon: SparklesIcon },
     { label: 'Study', text: 'Northwestern University', Icon: AcademicCapIcon },
     { label: 'Employment', text: 'Entrepreneur', Icon: BuildingOffice2Icon },
   ],
@@ -274,6 +274,30 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
+    date: 'December 2024 - present',
+    location: 'Penelope Trunk',
+    title: 'Freelance',
+    content: (
+      <div>
+        <p style={{ marginBottom:1+'rem' }}>
+          Penelope Trunk is a well-known blogger who writes about careers, personal development and autism. I am building a new email marketing platform and migrating her blog from WP Engine to a VPS on DigitalOcean.
+        </p>
+        <ul>
+          <li style={{ marginBottom:'0.5rem', marginLeft: '1rem', listStyleType: 'disc',  paddingLeft: '.5rem' }}>
+            Migrated off Hubspot to a custom version of <a className='underline' href="https://mailster.co/" target="_blank">Mailster</a>, a Wordpress plugin, lowering cost from $25,000 per year to less than $1,500.
+          </li>
+          <li style={{ marginBottom:'0.5rem', marginLeft: '1rem', listStyleType: 'disc',  paddingLeft: '.5rem' }}>
+            Rewrote the Mailster automation component to scale to up to 200,000 messages per day via Amazon Simple Email Service.
+          </li>
+          <li style={{ marginBottom:'0.5rem', marginLeft: '1rem', listStyleType: 'disc',  paddingLeft: '.5rem' }}>
+            Customized the Wordpress and PHP instances to handle long running, high-memory cron tasks.
+          </li>
+        </ul>
+        
+      </div>
+    ),
+  },
+  {
     date: '2023 - present',
     location: 'Open source projects',
     title: 'Freelance',
@@ -283,10 +307,10 @@ export const experience: TimelineItem[] = [
           Working on two open source projects that I built from scratch.
         </p>
         <ul>
-          <li style={{ marginBottom:'0.5rem' }}>
+          <li style={{ marginBottom:'0.5rem' }} >
             <a className='underline' href="https://github.com/djscruggs/aptrs-react">APTRS</a> - React front-end to a Python API for penetration testing. Uses Vite, Tailwind CSS, Material-Tailwind theme
           </li>
-          <li>
+          <li style={{ marginBottom:'0.5rem' }}>
             <a className='underline' href="https://github.com/djscruggs/trybe">TRYBE</a> -  a full stack PWA built in Remix with Prisma/Supabase as back end and Fly.io for deployment
           </li>
         </ul>
