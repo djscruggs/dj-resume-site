@@ -119,7 +119,7 @@ export interface RatesSection {
 
 export interface RateItem {
   title: string;
-  hoursPerMonth: string;
+  hoursPerMonth?: string;
   description: string;
   rate: string;
 }
