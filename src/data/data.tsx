@@ -472,28 +472,28 @@ export const testimonial: TestimonialSection = {
  */
 export const rates: RatesSection = {
   title: 'Rates',
-  description: 'I offer three levels of engagement. Rates are based on the number of hours per month and and the nature of the work. These rates are adjustable based on the exact scope of your project.',
+  description: 'I offer three multiple levels of engagement. Rates are based on the number of hours per month and and the nature of the work. These rates are adjustable based on the exact scope of your project.',
   items: [
     {
       title: 'Strategist',
-      hoursPerMonth: '10 hours per month',
       description: 'I serve as your technical advisor, focusing on high-level technology decisions and roadmapping. I help your business evaluate its tech stack, identify opportunities for innovation, and make informed decisions about technology investments without getting involved in day-to-day implementation',
       rate: '$200 per hour',
     },
     {
+      title: 'CTO',
+      description: 'I provide comprehensive technology leadership that combines strategic planning with operational oversight. I manage technology budgets, lead technical teams, establish technology governance, and align technical initiatives with business objectives. I act as a bridge between your technical teams and executive leadership while ensuring your company\'s technical vision is executed effectively. ',
+      rate: '$150 per hour',
+    },
+    {
       title: 'Senior Developer',
-      hoursPerMonth: '40 hours per month',
       description: 'I work directly with your development teams as a hands-on technical leader to improve code quality, implement best practices, and solve complex technical challenges. I provide technical mentorship and help establish coding standards while actively participating in development tasks.',
       rate: '$100 per hour',
     },
     {
-      title: 'CTO',
-      hoursPerMonth: '80 hours per month',
-      description: 'I provide comprehensive technology leadership that combines strategic planning with operational oversight. I manage technology budgets, lead technical teams, establish technology governance, and align technical initiatives with business objectives. I act as a bridge between your technical teams and executive leadership while ensuring your company\'s technical vision is executed effectively. ',
-      rate: '$150 per hour',
-    },
-    
-    
+      title: 'Hired Gun',
+      description: 'I dive in and crank out code. I\'m a great fit for projects that need a quick turnaround or specific technical expertise.',
+      rate: '$70 per hour',
+    }
   ],
 };
 
