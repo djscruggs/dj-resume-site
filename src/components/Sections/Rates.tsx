@@ -20,11 +20,11 @@ const Rates: FC = memo(() => {
             <p className="text-sm text-neutral-800 ">{description}</p>
           </div>
           <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            {items.map(({ title, description, hoursPerMonth, rate }, idx) => (
+            {items.map(({ title, description, rate }, idx) => (
               <li className="col-span-2 flex flex-col items-start" key={idx}>
                 <div className="text-lg font-bold text-neutral-800">{title}</div>
                 <div className="text-xs italic text-neutral-800 mb-2">
-                  {hoursPerMonth} at {rate}
+                  {rate}
                 </div>
                 <div className="text-md text-neutral-600">{description}</div>
               </li>
