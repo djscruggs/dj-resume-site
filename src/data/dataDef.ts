@@ -1,7 +1,7 @@
-import { StaticImageData } from 'next/image';
-import { FC, ForwardRefExoticComponent, SVGProps } from 'react';
+import {StaticImageData} from 'next/image';
+import {FC, ForwardRefExoticComponent, SVGProps} from 'react';
 
-import { IconProps } from '../components/Icon/Icon';
+import {IconProps} from '../components/Icon/Icon';
 
 export interface HomepageMeta {
   title: string;
@@ -88,7 +88,7 @@ export interface PortfolioItem {
  */
 export interface TimelineItem {
   date: string;
-  location: string;
+  location?: string;
   title: string;
   content: JSX.Element;
 }
