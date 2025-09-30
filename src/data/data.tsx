@@ -15,7 +15,7 @@ import SubstackIcon from '../components/Icon/SubstackIcon';
 import heroImage from '../images/hero.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.png';
 import porfolioImage3 from '../images/portfolio/portfolio-3.png';
-import porfolioImage4 from '../images/portfolio/portfolio-4.png'; 
+import porfolioImage4 from '../images/portfolio/portfolio-4.png';
 import porfolioImage5 from '../images/portfolio/portfolio-5.png';
 import porfolioImage6 from '../images/portfolio/portfolio-6.png';
 import profilepic from '../images/profilepic.jpg';
@@ -38,7 +38,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: "DJ Scruggs' Resume",
-  description: "Summary of skills, rates, and work history",
+  description: 'Summary of skills, rates, and work history',
 };
 
 /**
@@ -66,14 +66,18 @@ export const heroData: Hero = {
   name: `Hi, I'm DJ!`,
   description: (
     <>
-      <p className='text-3xl font-bold text-stone-50'>I thrive in the gap between <span className='text-yellow'>people</span> and <br />the <span className='text-yellow'>value</span> they seek from <span className='text-yellow'>software</span>. </p>
+      <p className="text-3xl font-bold text-stone-50">
+        I thrive in the gap between <span className="text-yellow">people</span> and <br />
+        the <span className="text-yellow">value</span> they seek from <span className="text-yellow">software</span>.{' '}
+      </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg w-2/3">
-        I'm a <strong className="text-stone-100">serial entrepreneur with multiple exits</strong> and a <strong>full stack software engineer</strong> in Northwest Arkansas.
-      
-        In my spare time I like to walk my dog <strong className="text-stone-100">Monkey</strong>, and write the{' '}
+        I'm a <strong className="text-stone-100">serial entrepreneur with multiple exits</strong> and a{' '}
+        <strong>full stack software engineer</strong> in Northwest Arkansas. In my spare time I like to walk my dog{' '}
+        <strong className="text-stone-100">Monkey</strong>, and write the{' '}
         <strong className="text-stone-100 underline">
           <a href="https://djcodes.substack.com/">DJ Codes</a>
-        </strong> newsletter on Substack.
+        </strong>{' '}
+        newsletter on Substack.
       </p>
     </>
   ),
@@ -112,21 +116,19 @@ const calculate_age = (dob: string) => {
   const difference = Date.now() - birthDate.getTime();
   const age = new Date(difference);
   return Math.abs(age.getUTCFullYear() - 1970);
-}
+};
 export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `I'm a digital strategist, real estate investor, fractional CTO and full stack developer who excels at solving problems with code. I have multiple eight-figure exits and tons of learning experiences along the way. I love to work and expect to never stop building things.`,
   aboutItems: [
-    { label: 'Location', text: 'Fayetteville, AR', Icon: MapIcon },
-    { label: 'Age', text: calculate_age('1968-07-19').toString(), Icon: CalendarIcon },
-    { label: 'Nationality', text: 'USA', Icon: FlagIcon },
-    { label: 'Interests', text: 'Writing, Music, Social Sciences', Icon: SparklesIcon },
-    { label: 'Study', text: 'Northwestern University', Icon: AcademicCapIcon },
-    { label: 'Employment', text: 'Entrepreneur', Icon: BuildingOffice2Icon },
+    {label: 'Location', text: 'Fayetteville, AR', Icon: MapIcon},
+    {label: 'Age', text: calculate_age('1968-07-19').toString(), Icon: CalendarIcon},
+    {label: 'Nationality', text: 'USA', Icon: FlagIcon},
+    {label: 'Interests', text: 'Writing, Music, Social Sciences', Icon: SparklesIcon},
+    {label: 'Study', text: 'Northwestern University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Entrepreneur', Icon: BuildingOffice2Icon},
   ],
 };
-
-
 
 /**
  * Skills section
@@ -142,6 +144,10 @@ export const skills: SkillGroup[] = [
       {
         name: 'Ruby on Rails',
         level: 8,
+      },
+      {
+        name: 'LLM APIs (various)',
+        level: 7,
       },
       {
         name: 'PHP',
@@ -242,7 +248,7 @@ export const portfolioItems: PortfolioItem[] = [
 ];
 
 /**
- * Education section 
+ * Education section
  */
 export const education: TimelineItem[] = [
   {
@@ -253,7 +259,8 @@ export const education: TimelineItem[] = [
       <div>
         <p>
           I decided by my senior year that I didn't want to teach, but NU is expensive so I took the degree and became
-          one of those classic liberal arts major who had no idea what he wanted to do. Luckily I discovered I have an entrepreneurial instinct and a knack for computers.
+          one of those classic liberal arts major who had no idea what he wanted to do. Luckily I discovered I have an
+          entrepreneurial instinct and a knack for computers.
         </p>
       </div>
     ),
@@ -265,7 +272,11 @@ export const education: TimelineItem[] = [
     content: (
       <div>
         <p>
-          Innovative sales method that trained me to, above all, not act like a salesman. See <a className="textblue underline" href="https://www.derekscruggs.com/up-front-contracts.html">this post</a> on my blog about one key concept, the <span className="italic">Up Front Contract</span>.
+          Innovative sales method that trained me to, above all, not act like a salesman. See{' '}
+          <a className="textblue underline" href="https://www.derekscruggs.com/up-front-contracts.html">
+            this post
+          </a>{' '}
+          on my blog about one key concept, the <span className="italic">Up Front Contract</span>.
         </p>
       </div>
     ),
@@ -274,50 +285,91 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'December 2024 - present',
-    location: 'Penelope Trunk',
-    title: 'Freelance',
+    date: 'Janary 2025 - present',
+    location: 'Cardless ID',
+    title: 'Founder',
     content: (
       <div>
-        <p style={{ marginBottom:1+'rem' }}>
-          <a className='underline' href="https://penelopetrunk.com/" target="_blank">Penelope Trunk</a> is a well-known blogger who writes about careers, personal development and autism. I am building a new email marketing platform and migrating her blog from WP Engine to a VPS on DigitalOcean.
+        <p style={{marginBottom: 1 + 'rem'}}>
+          <a className="underline" href="https://cardlessid.org/" target="_blank">
+            Cardless ID
+          </a>{' '}
+          is a nonprofit age verification platform to age-gate websites in compliance with local laws. The website uses
+          React Router V7, Firebase, and the Algorand blockchain. The mobile app in development is built on Expo and
+          provides a custom Algorand wallet with decentralized identiy credentials.
+        </p>
+      </div>
+    ),
+  },
+  {
+    date: 'December 2024 - present',
+    location: 'Penelope Trunk',
+    title: 'Contract Developer',
+    content: (
+      <div>
+        <p style={{marginBottom: 1 + 'rem'}}>
+          <a className="underline" href="https://penelopetrunk.com/" target="_blank">
+            Penelope Trunk
+          </a>{' '}
+          is a well-known blogger who writes about careers, personal development and autism. I am building a new email
+          marketing platform and migrating her blog from WP Engine to a VPS on DigitalOcean.
         </p>
         <ul>
-          <li style={{ marginBottom:'0.5rem', marginLeft: '1rem', listStyleType: 'disc',  paddingLeft: '.5rem' }}>
-            Migrated off Hubspot to a custom version of <a className='underline' href="https://mailster.co/" target="_blank">Mailster</a>, a Wordpress plugin, lowering cost from $25,000 per year to less than $1,500.
+          <li style={{marginBottom: '0.5rem', marginLeft: '1rem', listStyleType: 'disc', paddingLeft: '.5rem'}}>
+            Migrated off Hubspot to a custom version of{' '}
+            <a className="underline" href="https://mailster.co/" target="_blank">
+              Mailster
+            </a>
+            , a Wordpress plugin, lowering cost from $25,000 per year to less than $1,500.
           </li>
-          <li style={{ marginBottom:'0.5rem', marginLeft: '1rem', listStyleType: 'disc',  paddingLeft: '.5rem' }}>
-            Rewrote the Mailster automation component to scale to up to 200,000 messages per day via Amazon Simple Email Service.
+          <li style={{marginBottom: '0.5rem', marginLeft: '1rem', listStyleType: 'disc', paddingLeft: '.5rem'}}>
+            Rewrote the Mailster automation component to scale to up to 200,000 messages per day via Amazon Simple Email
+            Service.
           </li>
-          <li style={{ marginBottom:'0.5rem', marginLeft: '1rem', listStyleType: 'disc',  paddingLeft: '.5rem' }}>
+          <li style={{marginBottom: '0.5rem', marginLeft: '1rem', listStyleType: 'disc', paddingLeft: '.5rem'}}>
             Customized the Wordpress and PHP instances to handle long running, high-memory cron tasks.
           </li>
         </ul>
-        
       </div>
     ),
   },
   {
     date: '2023 - present',
-    location: 'Open source projects',
-    title: 'Freelance',
+    title: 'Side projects',
     content: (
       <div>
-        <p style={{ marginBottom:1+'rem' }}>
-          Working on two open source projects that I built from scratch.
-        </p>
         <ul>
-          <li style={{ marginBottom:'0.5rem' }} >
-            <a className='underline' href="https://github.com/djscruggs/aptrs-react">APTRS</a> - React front-end to a Python API for penetration testing. Uses Vite, Tailwind CSS, Material-Tailwind theme
+          <li style={{marginBottom: '0.5rem'}}>
+            Nikozi Music (
+            <a className="underline" href="https://worldbuild.fwb.help/">
+              FWB/Worldcoin hackathon
+            </a>
+            ) - A Worldcoin mini-app that provided Spotify-style music functions integrates the Worldcoin
+            proof-of-humanity{' '}
+            <a className="underline" href="https://docs.world.org/">
+              Mini App ecosystem
+            </a>
           </li>
-          <li style={{ marginBottom:'0.5rem' }}>
-            <a className='underline' href="https://github.com/djscruggs/trybe">TRYBE</a> -  a full stack PWA built in Remix with Prisma/Supabase as back end and Fly.io for deployment
+          <li style={{marginBottom: '0.5rem'}}>
+            <a className="underline" href="https://github.com/djscruggs/aptrs-react">
+              APTRS
+            </a>{' '}
+            - React front-end to a Python API for penetration testing. Uses Vite, Tailwind CSS, Material-Tailwind theme
+          </li>
+          <li style={{marginBottom: '0.5rem'}}>
+            <a className="underline" href="https://github.com/djscruggs/trybe">
+              TRYBE
+            </a>{' '}
+            - a full stack PWA built in Remix with Prisma/Supabase as back end and Fly.io for deployment
           </li>
         </ul>
-        <p style={{ marginBottom:1+'rem', marginTop:1+'rem' }}>
-          Also assisting <a className='underline' href="https://buildcities.network/">BuildCities.network</a> with their decentralized funding platform.
+        <p style={{marginBottom: 1 + 'rem', marginTop: 1 + 'rem'}}>
+          Also assisting{' '}
+          <a className="underline" href="https://buildcities.network/">
+            BuildCities.network
+          </a>{' '}
+          with their decentralized funding platform.
         </p>
-        
       </div>
     ),
   },
@@ -343,7 +395,9 @@ export const experience: TimelineItem[] = [
     title: 'Chief Technology Officer',
     content: (
       <p>
-        Managed the complete product lifecycle for an influencer marketplace. Oversaw strategic planning, resolved tech issues, and delivered a viable product in just 5 months (succeeding when two predecessors failed). Migrated prototype from Moveable Type to use Node and PostgreSQL backend with Mithril/Coffeescript front end.
+        Managed the complete product lifecycle for an influencer marketplace. Oversaw strategic planning, resolved tech
+        issues, and delivered a viable product in just 5 months (succeeding when two predecessors failed). Migrated
+        prototype from Moveable Type to use Node and PostgreSQL backend with Mithril/Coffeescript front end.
       </p>
     ),
   },
@@ -352,11 +406,7 @@ export const experience: TimelineItem[] = [
     date: 'August 2014 - March 2015',
     location: 'Staunch Robots',
     title: 'VP Services',
-    content: (
-      <p>
-        Led project management and development for four Ruby on Rails projects.
-      </p>
-    ),
+    content: <p>Led project management and development for four Ruby on Rails projects.</p>,
   },
   {
     date: 'January 2014 - August 2014',
@@ -364,8 +414,9 @@ export const experience: TimelineItem[] = [
     title: 'Chief Technology Officer',
     content: (
       <p>
-        Led all technical development of a SaaS providing time- and role-based paging for hospital staff to be contacted for urgent critical care tasks.
-        Underlying technology included Ruby on Rails, PostgreSQL, Cisco IP Phones and Twilio.
+        Led all technical development of a SaaS providing time- and role-based paging for hospital staff to be contacted
+        for urgent critical care tasks. Underlying technology included Ruby on Rails, PostgreSQL, Cisco IP Phones and
+        Twilio.
       </p>
     ),
   },
@@ -375,8 +426,9 @@ export const experience: TimelineItem[] = [
     title: 'Chief Technology Officer',
     content: (
       <p>
-        Led all technical development of a SaaS providing custom analytics integrated with third party reporting tools such as Google Analytics, Mailchimp and dozens of others.
-        Core technology included Ruby on Rails, MySQL, jQuery, Highcharts and web APIs.
+        Led all technical development of a SaaS providing custom analytics integrated with third party reporting tools
+        such as Google Analytics, Mailchimp and dozens of others. Core technology included Ruby on Rails, MySQL, jQuery,
+        Highcharts and web APIs.
       </p>
     ),
   },
@@ -386,7 +438,9 @@ export const experience: TimelineItem[] = [
     title: 'VP Sales and Business Development',
     content: (
       <p>
-        Led sales during explosive growth period from $130,000 to $3 million in just two years. Also developed several key platform elements such as SalesForce integration, and entirely re-wrote the billing system. Core technology included PHP, MySQL, Zend Framework and web APIs.
+        Led sales during explosive growth period from $130,000 to $3 million in just two years. Also developed several
+        key platform elements such as SalesForce integration, and entirely re-wrote the billing system. Core technology
+        included PHP, MySQL, Zend Framework and web APIs.
       </p>
     ),
   },
@@ -396,7 +450,8 @@ export const experience: TimelineItem[] = [
     title: 'Co-Founder',
     content: (
       <p>
-        Created a B2C social media platform for extreme sports enthusiasts. Core technology included PHP, MySQL, Drupal and JavaScript.
+        Created a B2C social media platform for extreme sports enthusiasts. Core technology included PHP, MySQL, Drupal
+        and JavaScript.
       </p>
     ),
   },
@@ -406,8 +461,9 @@ export const experience: TimelineItem[] = [
     title: 'Chief Privacy Officer',
     content: (
       <p>
-        Devised and enforced spam-prevention policies for one of the first email marketing companies. Devised and executed a PR and marketing initiative
-        to highlight the company's thought leadership in permission marketing, leading us to win major enterprise accounts such as Cisco Systems and Dell Computer.
+        Devised and enforced spam-prevention policies for one of the first email marketing companies. Devised and
+        executed a PR and marketing initiative to highlight the company's thought leadership in permission marketing,
+        leading us to win major enterprise accounts such as Cisco Systems and Dell Computer.
       </p>
     ),
   },
@@ -417,8 +473,9 @@ export const experience: TimelineItem[] = [
     title: 'CEO & Co-Founder',
     content: (
       <p>
-        Created the industry's first email customer service platform, landing major clients such as Consumer Reports and the Chicago Board Options Exchange.
-        The company was acquired by MessageMedia, providing a 700% return to investors in two years.
+        Created the industry's first email customer service platform, landing major clients such as Consumer Reports and
+        the Chicago Board Options Exchange. The company was acquired by MessageMedia, providing a 700% return to
+        investors in two years.
       </p>
     ),
   },
@@ -430,23 +487,20 @@ export const experience: TimelineItem[] = [
 export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
-    
     {
       name: 'Penelope Trunk',
-      text: 'DJ is smart, patient and a great executor. I\'m constantly shocked by how quickly he gets things done and how much his input improves the original idea.',
-      image:
-        '/assets/penelope-trunk.jpg',
-    },{
+      text: "DJ is smart, patient and a great executor. I'm constantly shocked by how quickly he gets things done and how much his input improves the original idea.",
+      image: '/assets/penelope-trunk.jpg',
+    },
+    {
       name: 'Tameem Rahal, founder of TRYBE',
-      text: 'DJ has been a fantastic asset to our startup as we build towards an MVP. He\'s fully led the development of our web app, helping us productize our online community into a service we can scale and offer to others. I appreciate the tools he\'s implemented for us to help make the iterative process easy and manageable, and being able to adapt to new ideas and point out holes in our design. We\'re eager to see the final MVP come to life and are very happy with having DJ lead its development. Not to mention, he\'s a great human to chat and work with, which always makes the process even better. Thanks DJ!',
-      image:
-        '/assets/tameem-rahal.jpg',
+      text: "DJ has been a fantastic asset to our startup as we build towards an MVP. He's fully led the development of our web app, helping us productize our online community into a service we can scale and offer to others. I appreciate the tools he's implemented for us to help make the iterative process easy and manageable, and being able to adapt to new ideas and point out holes in our design. We're eager to see the final MVP come to life and are very happy with having DJ lead its development. Not to mention, he's a great human to chat and work with, which always makes the process even better. Thanks DJ!",
+      image: '/assets/tameem-rahal.jpg',
     },
     {
       name: 'Sourav Kalal, Engineering lead on APTRS',
-      text: 'Working with DJ on APTRS was such a fantastic experience! He took the lead on building the entire frontend from the ground up and wowed us all with his amazing skills while adding great features. DJ\'s technical know-how and knack for solving problems made a huge difference in tackling the challenges we faced, and thanks to his hard work, we got the project out on time. It was truly a joy to collaborate with DJ on this project!',
-      image:
-        '/assets/sourav-kalal.jpeg',
+      text: "Working with DJ on APTRS was such a fantastic experience! He took the lead on building the entire frontend from the ground up and wowed us all with his amazing skills while adding great features. DJ's technical know-how and knack for solving problems made a huge difference in tackling the challenges we faced, and thanks to his hard work, we got the project out on time. It was truly a joy to collaborate with DJ on this project!",
+      image: '/assets/sourav-kalal.jpeg',
     },
     {
       name: 'Dan Ripoll, CEO, ContentBLVD',
@@ -454,16 +508,15 @@ export const testimonial: TestimonialSection = {
       image: '/assets/dan-ripoll.jpg',
     },
     {
-      name: "Robin Diebel",
-      text: "During my time working closely with DJ at BlueSpruce, I had the opportunity to witness his exceptional leadership and organizational skills firsthand. His ability to effectively lead and inspire a team was truly commendable. DJ consistently demonstrated a strong vision for the company and effectively communicated it to the entire team, fostering a sense of purpose and motivation among employees.",
-      image: 'assets/robin-diebel.jpg'
+      name: 'Robin Diebel',
+      text: 'During my time working closely with DJ at BlueSpruce, I had the opportunity to witness his exceptional leadership and organizational skills firsthand. His ability to effectively lead and inspire a team was truly commendable. DJ consistently demonstrated a strong vision for the company and effectively communicated it to the entire team, fostering a sense of purpose and motivation among employees.',
+      image: 'assets/robin-diebel.jpg',
     },
     {
       name: 'Peter Klipfel, direct report at StatsMix',
       text: 'DJ had a wide breadth of knowledge, and kept us focused on the technical tasks that drove the product forward.',
-      image:
-        '/assets/peter-klipfel.png',
-    }
+      image: '/assets/peter-klipfel.png',
+    },
   ],
 };
 
@@ -472,28 +525,33 @@ export const testimonial: TestimonialSection = {
  */
 export const rates: RatesSection = {
   title: 'Rates',
-  description: 'I offer three multiple levels of engagement. Rates are based on the number of hours per month and and the nature of the work. These rates are adjustable based on the exact scope of your project.',
+  description:
+    'I offer three multiple levels of engagement. Rates are based on the number of hours per month and and the nature of the work. These rates are adjustable based on the exact scope of your project.',
   items: [
     {
       title: 'Strategist',
-      description: 'I serve as your technical advisor, focusing on high-level technology decisions and roadmapping. I help your business evaluate its tech stack, identify opportunities for innovation, and make informed decisions about technology investments without getting involved in day-to-day implementation',
+      description:
+        'I serve as your technical advisor, focusing on high-level technology decisions and roadmapping. I help your business evaluate its tech stack, identify opportunities for innovation, and make informed decisions about technology investments without getting involved in day-to-day implementation',
       rate: '$200 per hour',
     },
     {
       title: 'CTO',
-      description: 'I provide comprehensive technology leadership that combines strategic planning with operational oversight. I manage technology budgets, lead technical teams, establish technology governance, and align technical initiatives with business objectives. I act as a bridge between your technical teams and executive leadership while ensuring your company\'s technical vision is executed effectively. ',
+      description:
+        "I provide comprehensive technology leadership that combines strategic planning with operational oversight. I manage technology budgets, lead technical teams, establish technology governance, and align technical initiatives with business objectives. I act as a bridge between your technical teams and executive leadership while ensuring your company's technical vision is executed effectively. ",
       rate: '$150 per hour',
     },
     {
       title: 'Senior Developer',
-      description: 'I work directly with your development teams as a hands-on technical leader to improve code quality, implement best practices, and solve complex technical challenges. I provide technical mentorship and help establish coding standards while actively participating in development tasks.',
+      description:
+        'I work directly with your development teams as a hands-on technical leader to improve code quality, implement best practices, and solve complex technical challenges. I provide technical mentorship and help establish coding standards while actively participating in development tasks.',
       rate: '$100 per hour',
     },
     {
       title: 'Hired Gun',
-      description: 'I dive in and crank out code. I\'m a great fit for projects that need a quick turnaround or specific technical expertise.',
+      description:
+        "I dive in and crank out code. I'm a great fit for projects that need a quick turnaround or specific technical expertise.",
       rate: '$70 per hour',
-    }
+    },
   ],
 };
 
@@ -537,8 +595,8 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/djscruggs' },
-  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/djscruggs/' },
-  { label: 'Hashnode', Icon: HashnodeIcon, href: 'https://djscruggs.hashnode.dev/' },
-  { label: 'Substack', Icon: SubstackIcon, href: 'https://djcodes.substack.com/' },
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/djscruggs'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/djscruggs/'},
+  {label: 'Hashnode', Icon: HashnodeIcon, href: 'https://djscruggs.hashnode.dev/'},
+  {label: 'Substack', Icon: SubstackIcon, href: 'https://djcodes.substack.com/'},
 ];
