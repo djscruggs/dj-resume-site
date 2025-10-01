@@ -296,7 +296,7 @@ export const experience: TimelineItem[] = [
           </a>{' '}
           is a nonprofit age verification platform to age-gate websites in compliance with local laws. The website uses
           React Router V7, Firebase, and the Algorand blockchain. The mobile app in development is built on Expo and
-          provides a custom Algorand wallet with decentralized identiy credentials.
+          provides a custom Algorand wallet with decentralized identity credentials.
         </p>
       </div>
     ),
@@ -344,7 +344,7 @@ export const experience: TimelineItem[] = [
             <a className="underline" href="https://worldbuild.fwb.help/">
               FWB/Worldcoin hackathon
             </a>
-            ) - A Worldcoin mini-app that provided Spotify-style music functions integrates the Worldcoin
+            ) - A Worldcoin mini-app that provided Spotify-style music functions integrated with the Worldcoin
             proof-of-humanity{' '}
             <a className="underline" href="https://docs.world.org/">
               Mini App ecosystem
