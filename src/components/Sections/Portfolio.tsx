@@ -38,7 +38,7 @@ const Portfolio: FC = memo(() => {
 Portfolio.displayName = 'Portfolio';
 export default Portfolio;
 
-const ItemOverlay: FC<{ item: PortfolioItem }> = memo(({ item: { url, title, description } }) => {
+const ItemOverlay: FC<{item: PortfolioItem}> = memo(({ item: { url, title, description } }) => {
   const [mobile, setMobile] = useState(false);
   const [showOverlay, setShowOverlay] = useState(false);
   const linkRef = useRef<HTMLAnchorElement>(null);
@@ -60,7 +60,7 @@ const ItemOverlay: FC<{ item: PortfolioItem }> = memo(({ item: { url, title, des
     },
     [mobile, showOverlay],
   );
-  
+
   return (
     <a
       className={classNames(
@@ -76,11 +76,12 @@ const ItemOverlay: FC<{ item: PortfolioItem }> = memo(({ item: { url, title, des
         <div className="flex h-full w-full flex-col gap-y-2 overflow-y-auto overscroll-contain">
           {description && <h2 className="text-center font-bold text-white opacity-100">{title}</h2>}
           {description && <p className="text-xs text-white opacity-100 sm:text-sm">{description}</p>}
-          {description === '' || typeof description === 'undefined' && (
-            <div className="flex justify-center items-center h-full">
-              <h2 className="text-center font-bold text-white opacity-100">{title}</h2>
-            </div>
-          )}
+          {description === '' ||
+            (typeof description === 'undefined' && (
+              <div className="flex justify-center items-center h-full">
+                <h2 className="text-center font-bold text-white opacity-100">{title}</h2>
+              </div>
+            ))}
         </div>
         <ArrowTopRightOnSquareIcon className="absolute bottom-1 right-1 h-4 w-4 shrink-0 text-white sm:bottom-2 sm:right-2" />
       </div>

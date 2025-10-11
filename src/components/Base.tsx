@@ -4,5 +4,4 @@ const Base: FC = memo(() => {
   return <></>;
 });
 
-
 export default Base;

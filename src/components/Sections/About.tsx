@@ -11,7 +11,6 @@ const About: FC = memo(() => {
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.About}>
       <div className={classNames('grid grid-cols-1 gap-y-4', { 'md:grid-cols-4': !!profileImageSrc })}>
-
         {!!profileImageSrc && (
           <div className="col-span-1 flex justify-center md:justify-start">
             <div className="relative h-24 w-24 overflow-hidden rounded-xl md:h-32 md:w-32">
@@ -38,6 +37,5 @@ const About: FC = memo(() => {
     </Section>
   );
 });
-
 
 export default About;

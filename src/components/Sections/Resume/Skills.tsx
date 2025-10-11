@@ -16,7 +16,6 @@ export const SkillGroup: FC<PropsWithChildren<{skillGroup: SkillGroupType}>> = m
   );
 });
 
-
 export const Skill: FC<{skill: SkillType}> = memo(({ skill }) => {
   const { name, level, max = 10 } = skill;
   const percentage = useMemo(() => Math.round((level / max) * 100), [level, max]);
@@ -30,4 +29,3 @@ export const Skill: FC<{skill: SkillType}> = memo(({ skill }) => {
     </div>
   );
 });
-
