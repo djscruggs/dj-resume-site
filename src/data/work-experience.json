@@ -9,11 +9,7 @@
       "duration": "1 yr 2 mos",
       "location": "Remote",
       "description": "The global launchpad for generalists; community, opportunity and resource all under the one roof.",
-      "skills": [
-        "Customer Experience",
-        "Entrepreneurship",
-        "Leadership"
-      ]
+      "skills": ["Customer Experience", "Entrepreneurship", "Leadership"]
     },
     {
       "title": "Managing Partner",
@@ -23,11 +19,7 @@
       "duration": "6 yrs 1 mo",
       "location": "Greater Denver Area",
       "description": "Acquisition and management of cash-flow producing multifamily properties in emerging markets. Shared opportunities with investors for real estate capitalization. Focused on professionalism, integrity, and speed in all endeavors.",
-      "skills": [
-        "Customer Experience",
-        "Entrepreneurship",
-        "Leadership"
-      ]
+      "skills": ["Customer Experience", "Entrepreneurship", "Leadership"]
     },
     {
       "title": "Podcast Host",
@@ -47,9 +39,7 @@
       "duration": "4 yrs 11 mos",
       "location": "Denver",
       "description": "Wholesaled, fixed, and flipped single-family homes, as well as managed rentals throughout the Front Range.",
-      "skills": [
-        "Entrepreneurship"
-      ]
+      "skills": ["Entrepreneurship"]
     },
     {
       "title": "CTO",
@@ -59,12 +49,7 @@
       "duration": "2 yrs 4 mos",
       "location": "Boulder, CO",
       "description": "Managed complete product lifecycle for a web application. Oversaw strategic planning, resolved tech issues, and delivered a viable product. Supported financial planning, advised on estimated costs, served as product and project manager, and built a platform for the startup.",
-      "skills": [
-        "Software Development",
-        "Technology Management",
-        "Leadership",
-        "Product Management"
-      ]
+      "skills": ["Software Development", "Technology Management", "Leadership", "Product Management"]
     },
     {
       "title": "VP Services",
@@ -74,12 +59,7 @@
       "duration": "8 mos",
       "location": "Boulder, CO",
       "description": "Developed and managed client projects including web application development, content management system, ecommerce system, and crowd-sourced marketing content platform. Managed project administration, resource allocation, and customer relationship management.",
-      "skills": [
-        "Software Development",
-        "Technology Management",
-        "Customer Experience",
-        "Leadership"
-      ]
+      "skills": ["Software Development", "Technology Management", "Customer Experience", "Leadership"]
     },
     {
       "title": "CTO",
@@ -89,12 +69,7 @@
       "duration": "8 mos",
       "location": "Broomfield, CO",
       "description": "Led technical product development, converted telecom product from on-premises software to SaaS. Upgraded web interface, added support for two-way texting between practitioners.",
-      "skills": [
-        "Software Development",
-        "Technology Management",
-        "Entrepreneurship",
-        "Product Management"
-      ]
+      "skills": ["Software Development", "Technology Management", "Entrepreneurship", "Product Management"]
     },
     {
       "title": "CTO",
@@ -104,12 +79,7 @@
       "duration": "2 yrs 4 mos",
       "location": "Boulder, CO",
       "description": "Led development and launch of a B2B SaaS analytics platform. Added new features, aligned product roadmap with customer needs, and defined/implemented business development strategies.",
-      "skills": [
-        "Software Development",
-        "Technology Management",
-        "Entrepreneurship",
-        "Product Management"
-      ]
+      "skills": ["Software Development", "Technology Management", "Entrepreneurship", "Product Management"]
     },
     {
       "title": "VP Sales & Business Development",
@@ -118,11 +88,7 @@
       "endDate": "Aug 2010",
       "duration": "2 yrs 8 mos",
       "description": "Developed sales strategies, managed marketing automation, produced webinars/YouTube videos, led user testing, and contributed to revenue growth and capital raising.",
-      "skills": [
-        "Software Development",
-        "Customer Experience",
-        "Entrepreneurship"
-      ]
+      "skills": ["Software Development", "Customer Experience", "Entrepreneurship"]
     },
     {
       "title": "CEO",
@@ -147,9 +113,7 @@
       "endDate": "Dec 2001",
       "duration": "3 yrs",
       "description": "Focused on customer experience and privacy-related roles.",
-      "skills": [
-        "Customer Experience"
-      ]
+      "skills": ["Customer Experience"]
     },
     {
       "title": "CEO & Co-Founder",

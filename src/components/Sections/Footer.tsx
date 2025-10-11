@@ -4,10 +4,10 @@ import { FC, memo } from 'react';
 import { SectionId } from '../../data/data';
 import Socials from '../Socials';
 
-//calculate  copyright year 
-let year = new Date().getFullYear().toString()
+//calculate  copyright year
+let year = new Date().getFullYear().toString();
 if (year !== '2023') {
-  year = "2023 - " + year.toString();
+  year = '2023 - ' + year.toString();
 }
 const Footer: FC = memo(() => (
   <div className="relative bg-neutral-900 px-4 pb-6 pt-12 sm:px-8 sm:pb-8 sm:pt-14">

@@ -23,9 +23,7 @@ const Rates: FC = memo(() => {
             {items.map(({ title, description, rate }, idx) => (
               <li className="col-span-2 flex flex-col items-start" key={idx}>
                 <div className="text-lg font-bold text-neutral-800">{title}</div>
-                <div className="text-xs italic text-neutral-800 mb-2">
-                  {rate}
-                </div>
+                <div className="text-xs italic text-neutral-800 mb-2">{rate}</div>
                 <div className="text-md text-neutral-600">{description}</div>
               </li>
             ))}

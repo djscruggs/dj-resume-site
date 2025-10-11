@@ -1,5 +1,18 @@
 import emailjs from '@emailjs/browser';
-import { FC, memo, useCallback, useMemo, useState } from 'react';
+import { FC, memo, useCallback, useEffect, useMemo, useState } from 'react';
+
+import { RECAPTCHA_SITE_KEY } from '../../../config';
+
+// Declare global grecaptcha and callback
+declare global {
+  interface Window {
+    grecaptcha: {
+      ready: (callback: () => void) => void;
+      execute: (siteKey: string, options: {action: string}) => Promise<string>;
+    };
+    onRecaptchaSubmit?: (token: string) => void;
+  }
+}
 
 interface FormData {
   [key: string]: string | undefined;
@@ -25,6 +38,41 @@ const ContactForm: FC = memo(() => {
 
   const [data, setData] = useState<FormData>(defaultData);
 
+  // Function to send email with reCAPTCHA token
+  const sendEmailWithToken = useCallback(
+    async (token: string) => {
+      try {
+        console.log('reCAPTCHA token received, sending email...');
+
+        // Prepare form data with reCAPTCHA token
+        const formData = { ...data };
+        formData['reply_to'] = formData['user_email'];
+        formData['g-recaptcha-response'] = token;
+
+        // Send email via EmailJS
+        await emailjs.send('service_gd8ahdd', 'template_zs03dvf', formData, 'CUs0nfElnWZlGwWWM');
+
+        setMessage(`Thank you ${formData.user_name} for your message`);
+
+        // Reset the form
+        setData(defaultData);
+      } catch (error) {
+        console.error('Error sending message:', error);
+        setMessage('Failed to send message. Please try again.');
+      }
+    },
+    [data, defaultData],
+  );
+
+  // Set up the global callback function
+  useEffect(() => {
+    window.onRecaptchaSubmit = sendEmailWithToken;
+
+    return () => {
+      delete window.onRecaptchaSubmit;
+    };
+  }, [sendEmailWithToken]);
+
   const onChange = useCallback(
     <T extends HTMLInputElement | HTMLTextAreaElement>(event: React.ChangeEvent<T>): void => {
       const { name, value } = event.target;
@@ -37,13 +85,28 @@ const ContactForm: FC = memo(() => {
   );
 
   const handleSendMessage = useCallback(
-    async (event: React.FormEvent<HTMLFormElement>) => {
+    (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      data['reply_to'] = data['user_email'];
-      emailjs.send('service_gd8ahdd', 'template_zs03dvf', data, 'CUs0nfElnWZlGwWWM')
-      setMessage(`Thank you ${data.user_name} for your message`);
+
+      // Check if grecaptcha is ready
+      if (typeof window !== 'undefined' && window.grecaptcha) {
+        window.grecaptcha.ready(() => {
+          window.grecaptcha
+            .execute(RECAPTCHA_SITE_KEY, { action: 'submit' })
+            .then(token => {
+              sendEmailWithToken(token);
+            })
+            .catch(error => {
+              console.error('reCAPTCHA execution failed:', error);
+              setMessage('reCAPTCHA verification failed. Please try again.');
+            });
+        });
+      } else {
+        console.error('reCAPTCHA not loaded');
+        setMessage('reCAPTCHA not loaded. Please refresh the page and try again.');
+      }
     },
-    [data],
+    [sendEmailWithToken],
   );
 
   const inputClasses =
@@ -52,14 +115,7 @@ const ContactForm: FC = memo(() => {
   return (
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" id="sendEmail" method="POST" onSubmit={handleSendMessage}>
       {message !== '' && <div className="text-green-500">{message}</div>}
-      <input
-        className={inputClasses}
-        name="user_name"
-        onChange={onChange}
-        placeholder="Name"
-        required
-        type="text"
-      />
+      <input className={inputClasses} name="user_name" onChange={onChange} placeholder="Name" required type="text" />
       <input
         autoComplete="email"
         className={inputClasses}
@@ -69,13 +125,7 @@ const ContactForm: FC = memo(() => {
         required
         type="email"
       />
-      <input
-        className={inputClasses}
-        name="user_phone"
-        onChange={onChange}
-        placeholder="Phone number"
-        type="text"
-      />
+      <input className={inputClasses} name="user_phone" onChange={onChange} placeholder="Phone number" type="text" />
       <textarea
         className={inputClasses}
         maxLength={250}
