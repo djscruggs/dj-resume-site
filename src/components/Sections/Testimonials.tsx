@@ -113,7 +113,7 @@ const Testimonials: FC = memo(() => {
   );
 });
 
-const Testimonial: FC<{testimonial: Testimonial; isActive: boolean}> = memo(
+const Testimonial: FC<{ testimonial: Testimonial; isActive: boolean }> = memo(
   ({ testimonial: { text, name, image }, isActive }) => (
     <div
       className={classNames(

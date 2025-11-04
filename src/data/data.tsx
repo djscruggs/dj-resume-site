@@ -121,12 +121,12 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `I'm a digital strategist, real estate investor, fractional CTO and full stack developer who excels at solving problems with code. I have multiple eight-figure exits and tons of learning experiences along the way. I love to work and expect to never stop building things.`,
   aboutItems: [
-    {label: 'Location', text: 'Fayetteville, AR', Icon: MapIcon},
-    {label: 'Age', text: calculate_age('1968-07-19').toString(), Icon: CalendarIcon},
-    {label: 'Nationality', text: 'USA', Icon: FlagIcon},
-    {label: 'Interests', text: 'Writing, Music, Social Sciences', Icon: SparklesIcon},
-    {label: 'Study', text: 'Northwestern University', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Entrepreneur', Icon: BuildingOffice2Icon},
+    { label: 'Location', text: 'Fayetteville, AR', Icon: MapIcon },
+    { label: 'Age', text: calculate_age('1968-07-19').toString(), Icon: CalendarIcon },
+    { label: 'Nationality', text: 'USA', Icon: FlagIcon },
+    { label: 'Interests', text: 'Writing, Music, Social Sciences', Icon: SparklesIcon },
+    { label: 'Study', text: 'Northwestern University', Icon: AcademicCapIcon },
+    { label: 'Employment', text: 'Entrepreneur', Icon: BuildingOffice2Icon },
   ],
 };
 
@@ -294,7 +294,7 @@ export const experience: TimelineItem[] = [
     title: 'Founder',
     content: (
       <div>
-        <p style={{marginBottom: 1 + 'rem'}}>
+        <p style={{ marginBottom: 1 + 'rem' }}>
           <a className="underline" href="https://cardlessid.org/" target="_blank">
             Cardless ID
           </a>{' '}
@@ -311,7 +311,7 @@ export const experience: TimelineItem[] = [
     title: 'Contract Developer',
     content: (
       <div>
-        <p style={{marginBottom: 1 + 'rem'}}>
+        <p style={{ marginBottom: 1 + 'rem' }}>
           <a className="underline" href="https://penelopetrunk.com/" target="_blank">
             Penelope Trunk
           </a>{' '}
@@ -319,18 +319,18 @@ export const experience: TimelineItem[] = [
           marketing platform and migrating her blog from WP Engine to a VPS on DigitalOcean.
         </p>
         <ul>
-          <li style={{marginBottom: '0.5rem', marginLeft: '1rem', listStyleType: 'disc', paddingLeft: '.5rem'}}>
+          <li style={{ marginBottom: '0.5rem', marginLeft: '1rem', listStyleType: 'disc', paddingLeft: '.5rem' }}>
             Migrated off Hubspot to a custom version of{' '}
             <a className="underline" href="https://mailster.co/" target="_blank">
               Mailster
             </a>
             , a Wordpress plugin, lowering cost from $25,000 per year to less than $1,500.
           </li>
-          <li style={{marginBottom: '0.5rem', marginLeft: '1rem', listStyleType: 'disc', paddingLeft: '.5rem'}}>
+          <li style={{ marginBottom: '0.5rem', marginLeft: '1rem', listStyleType: 'disc', paddingLeft: '.5rem' }}>
             Rewrote the Mailster automation component to scale to up to 200,000 messages per day via Amazon Simple Email
             Service.
           </li>
-          <li style={{marginBottom: '0.5rem', marginLeft: '1rem', listStyleType: 'disc', paddingLeft: '.5rem'}}>
+          <li style={{ marginBottom: '0.5rem', marginLeft: '1rem', listStyleType: 'disc', paddingLeft: '.5rem' }}>
             Customized the Wordpress and PHP instances to handle long running, high-memory cron tasks.
           </li>
         </ul>
@@ -343,7 +343,7 @@ export const experience: TimelineItem[] = [
     content: (
       <div>
         <ul>
-          <li style={{marginBottom: '0.5rem'}}>
+          <li style={{ marginBottom: '0.5rem' }}>
             <a className="underline" href="https://blockchainrangers.com/">
               Blockchain Rangers
             </a>{' '}
@@ -355,7 +355,7 @@ export const experience: TimelineItem[] = [
             </a>{' '}
             interface to take a advantage of LLMs and x402 payments.
           </li>
-          <li style={{marginBottom: '0.5rem'}}>
+          <li style={{ marginBottom: '0.5rem' }}>
             Nikozi Music (
             <a className="underline" href="https://worldbuild.fwb.help/">
               FWB/Worldcoin hackathon
@@ -366,20 +366,20 @@ export const experience: TimelineItem[] = [
               Mini App ecosystem
             </a>
           </li>
-          <li style={{marginBottom: '0.5rem'}}>
+          <li style={{ marginBottom: '0.5rem' }}>
             <a className="underline" href="https://github.com/djscruggs/aptrs-react">
               APTRS
             </a>{' '}
             - React front-end to a Python API for penetration testing. Uses Vite, Tailwind CSS, Material-Tailwind theme
           </li>
-          <li style={{marginBottom: '0.5rem'}}>
+          <li style={{ marginBottom: '0.5rem' }}>
             <a className="underline" href="https://github.com/djscruggs/trybe">
               TRYBE
             </a>{' '}
             - a full stack PWA built in Remix with Prisma/Supabase as back end and Fly.io for deployment
           </li>
         </ul>
-        <p style={{marginBottom: 1 + 'rem', marginTop: 1 + 'rem'}}>
+        <p style={{ marginBottom: 1 + 'rem', marginTop: 1 + 'rem' }}>
           Also assisting{' '}
           <a className="underline" href="https://buildcities.network/">
             BuildCities.network
@@ -611,8 +611,8 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/djscruggs'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/djscruggs/'},
-  {label: 'Hashnode', Icon: HashnodeIcon, href: 'https://djscruggs.hashnode.dev/'},
-  {label: 'Substack', Icon: SubstackIcon, href: 'https://djcodes.substack.com/'},
+  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/djscruggs' },
+  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/djscruggs/' },
+  { label: 'Hashnode', Icon: HashnodeIcon, href: 'https://djscruggs.hashnode.dev/' },
+  { label: 'Substack', Icon: SubstackIcon, href: 'https://djcodes.substack.com/' },
 ];
