@@ -1,6 +1,6 @@
 import { FC, memo, PropsWithChildren } from 'react';
 
-const Work: FC<PropsWithChildren<{title: string}>> = memo(({ title, children }) => {
+const Work: FC<PropsWithChildren<{ title: string }>> = memo(({ title, children }) => {
   return (
     <div className="grid grid-cols-1 gap-y-4 py-8 first:pt-0 last:pb-0  md:grid-cols-4">
       <div className="col-span-1 flex justify-center md:justify-start">
