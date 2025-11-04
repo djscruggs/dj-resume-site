@@ -74,6 +74,10 @@
   "resolutions": {
     "commander": "^11.1.0",
     "undici-types": "^7.16.0",
-    "ignore": "^7.0.5"
+    "ignore": "^7.0.5",
+    "is-arrayish": "^0.3.2",
+    "glob": "^10.0.0",
+    "rimraf": "^5.0.0",
+    "inflight": "^1.0.6"
   }
 }
