@@ -348,8 +348,8 @@ export const experience: TimelineItem[] = [
               Blockchain Rangers
             </a>{' '}
             - A full-stack blockchain scam detection system with multi-factor risk scoring, real-time smart contract
-            analysis across using EtherScan, SolScan, Helius, and TON Center APIs. Vanilla JavaScript front end with
-            Flask backend. Also features a comprehensive{' '}
+            analysis using EtherScan, SolScan, Helius, and TON Center APIs. Vanilla JavaScript front end with Flask
+            backend. Also features a comprehensive{' '}
             <a className="underline" href="https://csds.blockchainrangers.com/llms.txt">
               llms.txt
             </a>{' '}
