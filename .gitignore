@@ -36,3 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 .env*.local
+mvp-services/.obsidian/workspace.json
+mvp-services/.obsidian/core-plugins.json
+mvp-services/.obsidian/graph.json
+mvp-services/.obsidian/appearance.json
+mvp-services/.obsidian/app.json
+mvp-services/Vibe Code Horror Stories - Breaches, Bills, and Build Fails.md
