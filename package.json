@@ -73,6 +73,7 @@
   },
   "resolutions": {
     "commander": "^11.1.0",
-    "undici-types": "^7.16.0"
+    "undici-types": "^7.16.0",
+    "ignore": "^7.0.5"
   }
 }
