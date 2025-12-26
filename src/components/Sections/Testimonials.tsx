@@ -9,7 +9,11 @@ import useWindow from '../../hooks/useWindow';
 import QuoteIcon from '../Icon/QuoteIcon';
 import Section from '../Layout/Section';
 
-const Testimonials: FC = memo(() => {
+interface TestimonialsProps {
+  fullWidth?: boolean;
+}
+
+const Testimonials: FC<TestimonialsProps> = memo(({ fullWidth }) => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const [scrollValue, setScrollValue] = useState(0);
   const [parallaxEnabled, setParallaxEnabled] = useState(false);
@@ -70,7 +74,7 @@ const Testimonials: FC = memo(() => {
   }
 
   return (
-    <Section noPadding sectionId={SectionId.Testimonials}>
+    <Section fullWidth={fullWidth} noPadding sectionId={SectionId.Testimonials}>
       <div
         className={classNames(
           'flex w-full items-center justify-center bg-cover bg-center px-4 py-16 md:py-24 lg:px-8',

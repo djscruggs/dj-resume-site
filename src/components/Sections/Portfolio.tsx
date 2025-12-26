@@ -9,9 +9,13 @@ import { PortfolioItem } from '../../data/dataDef';
 import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
 import Section from '../Layout/Section';
 
-const Portfolio: FC = memo(() => {
+interface PortfolioProps {
+  fullWidth?: boolean;
+}
+
+const Portfolio: FC<PortfolioProps> = memo(({ fullWidth }) => {
   return (
-    <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
+    <Section className="bg-neutral-800" fullWidth={fullWidth} sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8">
         <h2 className="self-center text-xl font-bold text-white">Portfolio</h2>
         <div className=" w-full columns-2 ">

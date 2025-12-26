@@ -6,9 +6,13 @@ import ResumeSection from './ResumeSection';
 import { SkillGroup } from './Skills';
 import TimelineItem from './TimelineItem';
 
-const Resume: FC = memo(() => {
+interface ResumeProps {
+  fullWidth?: boolean;
+}
+
+const Resume: FC<ResumeProps> = memo(({ fullWidth }) => {
   return (
-    <Section className="bg-neutral-100" sectionId={SectionId.Work}>
+    <Section className="bg-neutral-100" fullWidth={fullWidth} sectionId={SectionId.Work}>
       <div className="flex flex-col divide-y-2 divide-neutral-300">
         <ResumeSection title="Work">
           {experience.map((item, index) => (

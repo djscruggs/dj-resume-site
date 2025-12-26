@@ -5,11 +5,15 @@ import { FC, memo } from 'react';
 import { aboutData, SectionId } from '../../data/data';
 import Section from '../Layout/Section';
 
-const About: FC = memo(() => {
+interface AboutProps {
+  fullWidth?: boolean;
+}
+
+const About: FC<AboutProps> = memo(({ fullWidth }) => {
   const { profileImageSrc, description, aboutItems } = aboutData;
 
   return (
-    <Section className="bg-neutral-800" sectionId={SectionId.About}>
+    <Section className="bg-neutral-800" fullWidth={fullWidth} sectionId={SectionId.About}>
       <div className={classNames('grid grid-cols-1 gap-y-4', { 'md:grid-cols-4': !!profileImageSrc })}>
         {!!profileImageSrc && (
           <div className="col-span-1 flex justify-center md:justify-start">
