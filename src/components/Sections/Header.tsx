@@ -2,12 +2,13 @@ import { Dialog, DialogBackdrop, Transition } from '@headlessui/react';
 import { Bars3BottomRightIcon } from '@heroicons/react/24/outline';
 import classNames from 'classnames';
 import Link from 'next/link';
-import { FC, Fragment, memo, useCallback, useMemo, useState } from 'react';
+import { FC, Fragment, memo, useCallback, useEffect, useMemo, useState } from 'react';
 
 import { SectionId } from '../../data/data';
-import { useNavObserver } from '../../hooks/useNavObserver';
 
 export const headerID = 'headerNav';
+
+const HEADER_HEIGHT = 56; // px — matches the fixed header's p-4 height
 
 const Header: FC = memo(() => {
   const [currentSection, setCurrentSection] = useState<SectionId | null>(null);
@@ -24,21 +25,39 @@ const Header: FC = memo(() => {
     [],
   );
 
-  const intersectionHandler = useCallback((section: SectionId | null) => {
-    if (section) setCurrentSection(section);
+  // Update active section based on scroll position
+  useEffect(() => {
+    const onScroll = () => {
+      const scrollY = window.scrollY + HEADER_HEIGHT + 8;
+      let active: SectionId | null = null;
+      for (const id of navSections) {
+        const el = document.getElementById(id);
+        if (el && el.offsetTop <= scrollY) {
+          active = id;
+        }
+      }
+      setCurrentSection(active);
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll(); // set on mount
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [navSections]);
+
+  const handleNavClick = useCallback((section: SectionId) => {
+    setCurrentSection(section);
   }, []);
 
-  useNavObserver(navSections.map(section => `#${section}`).join(','), intersectionHandler);
   return (
     <>
-      <MobileNav currentSection={currentSection} navSections={navSections} />
-      <DesktopNav currentSection={currentSection} navSections={navSections} />
+      <MobileNav currentSection={currentSection} navSections={navSections} onNavClick={handleNavClick} />
+      <DesktopNav currentSection={currentSection} navSections={navSections} onNavClick={handleNavClick} />
     </>
   );
 });
 
-const DesktopNav: FC<{ navSections: SectionId[]; currentSection: SectionId | null }> = memo(
-  ({ navSections, currentSection }) => {
+const DesktopNav: FC<{ navSections: SectionId[]; currentSection: SectionId | null; onNavClick: (s: SectionId) => void }> = memo(
+  ({ navSections, currentSection, onNavClick }) => {
     const baseClass =
       '-m-1.5 p-1.5 rounded-md font-bold first-letter:uppercase hover:transition-colors hover:duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 sm:hover:text-orange-500 text-neutral-100';
     const activeClass = classNames(baseClass, 'text-orange-500');
@@ -52,6 +71,7 @@ const DesktopNav: FC<{ navSections: SectionId[]; currentSection: SectionId | nul
               current={section === currentSection}
               inactiveClass={inactiveClass}
               key={section}
+              onClick={() => onNavClick(section)}
               section={section}
             />
           ))}
@@ -61,8 +81,8 @@ const DesktopNav: FC<{ navSections: SectionId[]; currentSection: SectionId | nul
   },
 );
 
-const MobileNav: FC<{ navSections: SectionId[]; currentSection: SectionId | null }> = memo(
-  ({ navSections, currentSection }) => {
+const MobileNav: FC<{ navSections: SectionId[]; currentSection: SectionId | null; onNavClick: (s: SectionId) => void }> = memo(
+  ({ navSections, currentSection, onNavClick }) => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     const toggleOpen = useCallback(() => {
@@ -110,7 +130,7 @@ const MobileNav: FC<{ navSections: SectionId[]; currentSection: SectionId | null
                       current={section === currentSection}
                       inactiveClass={inactiveClass}
                       key={section}
-                      onClick={toggleOpen}
+                      onClick={() => { onNavClick(section); toggleOpen(); }}
                       section={section}
                     />
                   ))}

@@ -15,7 +15,7 @@ const behaviors = [
 
 const Personality: FC = memo(() => {
   return (
-    <Section className="bg-neutral-100" noPadding sectionId={SectionId.Personality}>
+    <Section className="bg-neutral-100 scroll-mt-16" noPadding sectionId={SectionId.Personality}>
       <div className="mx-auto max-w-screen-lg px-4 lg:px-8">
         {/* pt-0 so it visually continues from the About section above.
             pb-0 so the border-b is flush, matching the divide lines inside Resume. */}
