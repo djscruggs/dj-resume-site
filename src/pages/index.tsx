@@ -3,13 +3,13 @@ import { FC, memo } from 'react';
 
 import Page from '../components/Layout/Page';
 import About from '../components/Sections/About';
-import Personality from '../components/Sections/Resume/Personality';
 import Contact from '../components/Sections/Contact';
 import Footer from '../components/Sections/Footer';
 import Hero from '../components/Sections/Hero';
 import Portfolio from '../components/Sections/Portfolio';
 import Rates from '../components/Sections/Rates';
 import Resume from '../components/Sections/Resume';
+import Personality from '../components/Sections/Resume/Personality';
 import Testimonials from '../components/Sections/Testimonials';
 import { homePageMeta } from '../data/data';
 

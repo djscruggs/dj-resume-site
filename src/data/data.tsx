@@ -69,7 +69,8 @@ export const heroData: Hero = {
     <>
       <p className="text-3xl font-bold text-stone-50">
         I thrive in the gap between <span className="text-yellow">people</span> and <br />
-        the <span className="text-yellow">value</span> they seek from <span className="text-yellow">software</span>.{' '}
+        the <span className="text-yellow">value</span> they seek from <span className="text-yellow">software</span>
+        .{' '}
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg w-2/3">
         I'm a <strong className="text-stone-100">serial entrepreneur with multiple exits</strong> and a{' '}
