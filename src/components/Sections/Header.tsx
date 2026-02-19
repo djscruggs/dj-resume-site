@@ -45,7 +45,9 @@ const DesktopNav: FC<{ navSections: SectionId[]; currentSection: SectionId | nul
     return (
       <header className="fixed top-0 z-50 hidden w-full bg-neutral-900/50 p-4 backdrop-blur sm:block" id={headerID}>
         <nav className="flex justify-center gap-x-8">
-          {navSections.map(section => (
+          <NavItem activeClass={activeClass} current={currentSection === SectionId.About} inactiveClass={inactiveClass} section={SectionId.About} />
+          <Link className={inactiveClass} href="/#personality">Personality</Link>
+          {navSections.filter(s => s !== SectionId.About).map(section => (
             <NavItem
               activeClass={activeClass}
               current={section === currentSection}
@@ -103,7 +105,9 @@ const MobileNav: FC<{ navSections: SectionId[]; currentSection: SectionId | null
               leaveTo="-translate-x-full">
               <div className="relative w-4/5 bg-stone-800">
                 <nav className="mt-5 flex flex-col gap-y-2 px-2">
-                  {navSections.map(section => (
+                  <NavItem activeClass={activeClass} current={currentSection === SectionId.About} inactiveClass={inactiveClass} onClick={toggleOpen} section={SectionId.About} />
+                  <Link className={inactiveClass} href="/#personality" onClick={toggleOpen}>Personality</Link>
+                  {navSections.filter(s => s !== SectionId.About).map(section => (
                     <NavItem
                       activeClass={activeClass}
                       current={section === currentSection}
