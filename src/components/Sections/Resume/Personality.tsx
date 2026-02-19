@@ -53,7 +53,7 @@ const Personality: FC = memo(() => {
         <div>
           <a
             className="inline-flex items-center gap-x-2 rounded-lg border border-neutral-300 px-4 py-2 text-sm text-neutral-600 transition-colors hover:border-[#1a8fc1] hover:text-[#1a8fc1]"
-            href="/assets/predictive-index.pdf"
+            href="/assets/dj-scruggs-predictive-index.pdf"
             rel="noopener noreferrer"
             target="_blank">
             <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
