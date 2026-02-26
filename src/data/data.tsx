@@ -18,6 +18,8 @@ import porfolioImage3 from '../images/portfolio/portfolio-3.png';
 import porfolioImage4 from '../images/portfolio/portfolio-4.png';
 import porfolioImage5 from '../images/portfolio/portfolio-5.png';
 import porfolioImage6 from '../images/portfolio/portfolio-6.png';
+import porfolioImage7 from '../images/portfolio/portfolio-7.png';
+import porfolioImage8 from '../images/portfolio/portfolio-8.png';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -72,15 +74,19 @@ export const heroData: Hero = {
         the <span className="text-yellow">value</span> they seek from <span className="text-yellow">software</span>
         .{' '}
       </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg w-2/3">
-        I'm a <strong className="text-stone-100">serial entrepreneur with multiple exits</strong> and a{' '}
-        <strong>full stack software engineer</strong> in Oklahoma City. In my spare time I like to walk my dog{' '}
-        <strong className="text-stone-100">Monkey</strong>, and write the{' '}
-        <strong className="text-stone-100 underline">
-          <a href="https://djcodes.substack.com/">DJ Codes</a>
-        </strong>{' '}
-        newsletter on Substack.
-      </p>
+      <div className="prose-sm text-stone-200 sm:prose-base lg:prose-lg w-2/3">
+        <p>
+          I'm a <strong className="text-stone-100">serial entrepreneur with multiple exits</strong> and a{' '}
+          <strong>full stack software engineer</strong> in Oklahoma City.{' '}
+        </p>
+        <p>
+          In my spare time I like to walk my dog <strong className="text-stone-100">Monkey</strong> and host{' '}
+          <strong className="text-stone-100 underline">
+            <a href="https://interintellect.com/hosts/dj-scruggs">InterIntellect Salons</a>
+          </strong>
+          .
+        </p>
+      </div>
     </>
   ),
   actions: [
@@ -223,6 +229,16 @@ export const skills: SkillGroup[] = [
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
+  {
+    title: 'Blockchain Rangers',
+    url: 'https://csds.blockchainrangers.com/',
+    image: porfolioImage7,
+  },
+  {
+    title: 'Cardless ID',
+    url: 'https://cardlessid.org/',
+    image: porfolioImage8,
+  },
   {
     title: 'TRYBE Personal Development',
     url: 'https://github.com/djscruggs/trybe',
