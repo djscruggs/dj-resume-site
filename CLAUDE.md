@@ -47,11 +47,19 @@ Subsections within the Resume section use `ResumeSection` (`src/components/Secti
 
 The `PredictiveIndex` section (`src/components/Sections/PredictiveIndex.tsx`) mirrors this exact pattern.
 
+### Page render order
+
+`src/pages/index.tsx` composes sections in this order: `Hero → About → Personality → Resume → Portfolio → Testimonials → Rates → Contact → Footer`. `Header` is loaded with `dynamic(..., { ssr: false })` to avoid hydration mismatches from its scroll listener.
+
 ### Navigation
 
-`src/components/Sections/Header.tsx` drives the nav. To add a section to the menu:
-1. Add the `SectionId` to `navSections` array in Header
-2. If the section ID contains hyphens or needs a different display label, add an entry to the `navLabel` map in Header
+`src/components/Sections/Header.tsx` drives the nav. To add a section to the menu, add the `SectionId` to the `navSections` array. The nav link label is the raw `SectionId` string value (e.g. `'personality'` renders as "personality"). There is no label override map — rename the `SectionId` value in `data.tsx` if you need a different display name.
+
+Active-section tracking uses a scroll event listener (not `IntersectionObserver`). `useNavObserver` in `src/hooks/useNavObserver.tsx` exists but is unused.
+
+### Portfolio images
+
+Screenshots live in `src/images/portfolio/` numbered sequentially (`portfolio-7.png`, `portfolio-8.png`, …). Import and add to `portfolioItems` in `data.tsx`. Use `npx playwright@latest screenshot --viewport-size="1440,800" <url> <path>` to capture new ones at a width that avoids clipping.
 
 ### TypeScript strictness
 
