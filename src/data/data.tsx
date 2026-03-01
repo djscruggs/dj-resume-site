@@ -367,7 +367,8 @@ export const experience: TimelineItem[] = [
             </a>{' '}
             - A full-stack blockchain scam detection system with multi-factor risk scoring, real-time smart contract
             analysis using EtherScan, SolScan, Helius, and TON Center APIs. Vanilla JavaScript front end with Flask
-            backend. Also features a comprehensive{' '}
+            backend. Uses DeepSeek LLM to analyze scraped token/project data and generate structured risk assessments.
+            Also features a comprehensive{' '}
             <a className="underline" href="https://csds.blockchainrangers.com/llms.txt">
               llms.txt
             </a>{' '}
