@@ -307,120 +307,105 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'Janary 2025 - present',
-    location: 'Cardless ID',
-    title: 'Founder',
+    date: 'June 2017 - October 2023',
+    location: 'BlueSpruce Holdings',
+    title: 'Managing Partner & Technology Lead',
     content: (
-      <div>
-        <p style={{ marginBottom: 1 + 'rem' }}>
-          <a className="underline" href="https://cardlessid.org/" target="_blank">
-            Cardless ID
-          </a>{' '}
-          is a nonprofit age verification platform to age-gate websites in compliance with local laws. The website uses
-          React Router V7, Firebase, and the Algorand blockchain. The mobile app in development is built on Expo and
-          provides a custom Algorand wallet with decentralized identity credentials.
-        </p>
-      </div>
+      <p>
+        Led the purchase, management and sale of 330 multifamily apartments while personally building and maintaining a
+        turnkey investor communication platform. Raised $5 million in equity capital, delivered 7% annual cash flow, and
+        architected the full technology stack for investor reporting and deal management.
+      </p>
     ),
   },
   {
-    date: 'December 2024 - present',
-    location: 'Penelope Trunk',
-    title: 'Contract Developer',
-    content: (
-      <div>
-        <p style={{ marginBottom: 1 + 'rem' }}>
-          <a className="underline" href="https://penelopetrunk.com/" target="_blank">
-            Penelope Trunk
-          </a>{' '}
-          is a well-known blogger who writes about careers, personal development and autism. I am building a new email
-          marketing platform and migrating her blog from WP Engine to a VPS on DigitalOcean.
-        </p>
-        <ul>
-          <li style={{ marginBottom: '0.5rem', marginLeft: '1rem', listStyleType: 'disc', paddingLeft: '.5rem' }}>
-            Migrated off Hubspot to a custom version of{' '}
-            <a className="underline" href="https://mailster.co/" target="_blank">
-              Mailster
-            </a>
-            , a Wordpress plugin, lowering cost from $25,000 per year to less than $1,500.
-          </li>
-          <li style={{ marginBottom: '0.5rem', marginLeft: '1rem', listStyleType: 'disc', paddingLeft: '.5rem' }}>
-            Rewrote the Mailster automation component to scale to up to 200,000 messages per day via Amazon Simple Email
-            Service.
-          </li>
-          <li style={{ marginBottom: '0.5rem', marginLeft: '1rem', listStyleType: 'disc', paddingLeft: '.5rem' }}>
-            Customized the Wordpress and PHP instances to handle long running, high-memory cron tasks.
-          </li>
-        </ul>
-      </div>
-    ),
-  },
-  {
-    date: '2023 - present',
-    title: 'Side projects',
+    date: 'October 2023 - present',
+    title: 'Independent Product Engineer',
     content: (
       <div>
         <ul>
           <li style={{ marginBottom: '0.5rem' }}>
+            <a className="underline" href="https://cardlessid.org/" target="_blank">
+              Cardless ID
+            </a>{' '}
+            — A nonprofit age verification platform to age-gate websites in compliance with local laws. The website uses
+            React Router V7 and Firebase, while the backend leverages the Algorand blockchain for decentralized
+            identity. The mobile app in development is built on Expo with a custom Algorand wallet providing verifiable
+            credentials without centralized identity storage.
+          </li>
+          <li style={{ marginBottom: '0.5rem' }}>
             <a className="underline" href="https://blockchainrangers.com/">
               Blockchain Rangers
             </a>{' '}
-            - A full-stack blockchain scam detection system with multi-factor risk scoring, real-time smart contract
-            analysis using EtherScan, SolScan, Helius, and TON Center APIs. Vanilla JavaScript front end with Flask
+            — A full-stack blockchain scam detection system with multi-factor risk scoring and real-time smart contract
+            analysis across EtherScan, SolScan, Helius, and TON Center APIs. Vanilla JavaScript front end with Flask
             backend. Uses DeepSeek LLM to analyze scraped token/project data and generate structured risk assessments.
             Also features a comprehensive{' '}
             <a className="underline" href="https://csds.blockchainrangers.com/llms.txt">
               llms.txt
             </a>{' '}
-            interface to take a advantage of LLMs and x402 payments.
+            interface to take advantage of LLMs and x402 payments.
+          </li>
+          <li style={{ marginBottom: '0.5rem' }}>
+            <a className="underline" href="https://github.com/djscruggs/trybe">
+              TRYBE
+            </a>{' '}
+            — A full-stack PWA in React/Remix with Prisma/Supabase as the backend and Fly.io for deployment. Currently
+            in alpha testing, serving more than a thousand paying customers and tens of thousands free users.
+          </li>
+          <li style={{ marginBottom: '0.5rem' }}>
+            <a className="underline" href="https://penelopetrunk.com/" target="_blank">
+              Penelope Trunk
+            </a>{' '}
+            — Built a new email marketing platform and migrated her blog from WP Engine to a VPS on DigitalOcean.
+            Migrated off Hubspot to a custom version of{' '}
+            <a className="underline" href="https://mailster.co/" target="_blank">
+              Mailster
+            </a>
+            , lowering cost from $25,000/year to less than $1,500. Rewrote the Mailster automation component to scale to
+            200,000 messages/day via Amazon SES.
+          </li>
+          <li style={{ marginBottom: '0.5rem' }}>
+            <a className="underline" href="https://github.com/djscruggs/aptrs-react">
+              Automated Penetration Testing Reporting System
+            </a>{' '}
+            — Built an entirely new React/Vite/Tailwind front end for an outdated Python app, now serving more than
+            2,000 security professionals.
           </li>
           <li style={{ marginBottom: '0.5rem' }}>
             Nikozi Music (
             <a className="underline" href="https://worldbuild.fwb.help/">
               FWB/Worldcoin hackathon
             </a>
-            ) - A Worldcoin mini-app that provided Spotify-style music functions integrated with the Worldcoin
-            proof-of-humanity{' '}
-            <a className="underline" href="https://docs.world.org/">
-              Mini App ecosystem
-            </a>
-          </li>
-          <li style={{ marginBottom: '0.5rem' }}>
-            <a className="underline" href="https://github.com/djscruggs/aptrs-react">
-              APTRS
-            </a>{' '}
-            - React front-end to a Python API for penetration testing. Uses Vite, Tailwind CSS, Material-Tailwind theme
-          </li>
-          <li style={{ marginBottom: '0.5rem' }}>
-            <a className="underline" href="https://github.com/djscruggs/trybe">
-              TRYBE
-            </a>{' '}
-            - a full stack PWA built in Remix with Prisma/Supabase as back end and Fly.io for deployment
+            ) — A Worldcoin mini-app providing Spotify-style music functions integrated with the Worldcoin
+            proof-of-humanity Mini App ecosystem.
           </li>
         </ul>
-        <p style={{ marginBottom: 1 + 'rem', marginTop: 1 + 'rem' }}>
-          Also assisting{' '}
-          <a className="underline" href="https://buildcities.network/">
-            BuildCities.network
-          </a>{' '}
-          with their decentralized funding platform.
-        </p>
       </div>
     ),
   },
   {
-    date: '2017 - 2023',
-    location: 'BlueSpruce Holdings',
-    title: 'Co-founder & Managing Partner',
+    date: 'October 2010 - January 2013',
+    location: 'StatsMix',
+    title: 'Chief Technology Officer',
     content: (
       <p>
-        Led the purchase, management and sale of 330 multifamily apartments. Handled all asset management, finance and
-        investor relations. Implemented the{' '}
-        <a className="underline" href="https://www.eosworldwide.com/">
-          EOS
-        </a>{' '}
-        system for business management. Automated our investor communications with ActiveCampaign, Zapier, Buildium, EZ
-        Texting and more.
+        Led all technical development — frontend, backend, infrastructure, and API integrations — of a SaaS providing
+        custom analytics integrated with third-party reporting tools such as Google Analytics, Stripe, Mailchimp, and
+        more than 30 others. Core technology included Ruby on Rails, MySQL, jQuery, Highcharts, and 30+ web APIs.
+      </p>
+    ),
+  },
+  {
+    date: 'January 2008 - August 2010',
+    location: 'SurveyGizmo',
+    title: 'Senior Software Engineer',
+    content: (
+      <p>
+        Joined as employee number five and third technical employee. Helped convert a PHP app running on a single server
+        into a Zend Framework app running on clusters on two continents, serving customers in 80 countries as the
+        company scaled to 50+ employees. Built integrations with Salesforce and ExactTarget, supported the API, and
+        rebuilt the payment system to support complex billing for enterprise customers.
       </p>
     ),
   },
@@ -430,18 +415,24 @@ export const experience: TimelineItem[] = [
     title: 'Chief Technology Officer',
     content: (
       <p>
-        Managed the complete product lifecycle for an influencer marketplace. Oversaw strategic planning, resolved tech
-        issues, and delivered a viable product in just 5 months (succeeding when two predecessors failed). Migrated
-        prototype from Moveable Type to use Node and PostgreSQL backend with Mithril/Coffeescript front end.
+        Stepped in to rescue a stalled influencer marketplace after two prior CTOs failed. Rather than discarding the
+        existing codebase, salvaged the Node-based API and built an entirely new front end encompassing multiple
+        market-driven changes. Successfully launched within five months, serving more than ten thousand users. Node and
+        PostgreSQL backend with Mithril/CoffeeScript front end, deployed on Heroku.
       </p>
     ),
   },
-
   {
     date: 'August 2014 - March 2015',
     location: 'Staunch Robots',
-    title: 'VP Services',
-    content: <p>Led project management and development for four Ruby on Rails projects.</p>,
+    title: 'Technical Lead',
+    content: (
+      <p>
+        Stepped in to rescue a stalled project for a US client by rebuilding the agile process and managing distributed
+        developers in South America and Europe. Translated complex requirements across language and timezone barriers to
+        deliver a working product. Primary tech stack was Ruby on Rails with MySQL and PostgreSQL backends.
+      </p>
+    ),
   },
   {
     date: 'January 2014 - August 2014',
@@ -449,44 +440,9 @@ export const experience: TimelineItem[] = [
     title: 'Chief Technology Officer',
     content: (
       <p>
-        Led all technical development of a SaaS providing time- and role-based paging for hospital staff to be contacted
-        for urgent critical care tasks. Underlying technology included Ruby on Rails, PostgreSQL, Cisco IP Phones and
-        Twilio.
-      </p>
-    ),
-  },
-  {
-    date: 'October 2010 - January 2013',
-    location: 'StatsMix',
-    title: 'Chief Technology Officer',
-    content: (
-      <p>
-        Led all technical development of a SaaS providing custom analytics integrated with third party reporting tools
-        such as Google Analytics, Mailchimp and dozens of others. Core technology included Ruby on Rails, MySQL, jQuery,
-        Highcharts and web APIs.
-      </p>
-    ),
-  },
-  {
-    date: 'January 2008 - August 2010',
-    location: 'SurveyGizmo',
-    title: 'VP Sales and Business Development',
-    content: (
-      <p>
-        Led sales during explosive growth period from $130,000 to $3 million in just two years. Also developed several
-        key platform elements such as SalesForce integration, and entirely re-wrote the billing system. Core technology
-        included PHP, MySQL, Zend Framework and web APIs.
-      </p>
-    ),
-  },
-  {
-    date: 'March 2006 - November 2007',
-    location: 'Enthusiast Group',
-    title: 'Co-Founder',
-    content: (
-      <p>
-        Created a B2C social media platform for extreme sports enthusiasts. Core technology included PHP, MySQL, Drupal
-        and JavaScript.
+        Led a complex technical conversion from on-premises software to a multi-tenant SaaS architecture compliant with
+        HIPAA and related regulations for medical environments. Underlying technology included Ruby on Rails, PostgreSQL,
+        Cisco IP Phones, and Twilio.
       </p>
     ),
   },
@@ -496,9 +452,9 @@ export const experience: TimelineItem[] = [
     title: 'Chief Privacy Officer',
     content: (
       <p>
-        Devised and enforced spam-prevention policies for one of the first email marketing companies. Devised and
-        executed a PR and marketing initiative to highlight the company's thought leadership in permission marketing,
-        leading us to win major enterprise accounts such as Cisco Systems and Dell Computer.
+        Devised and enforced spam-prevention policies for one of the first email marketing companies. Led a PR and
+        marketing initiative to highlight the company's thought leadership in permission marketing, winning major
+        enterprise accounts such as Cisco Systems and Dell Computer.
       </p>
     ),
   },
