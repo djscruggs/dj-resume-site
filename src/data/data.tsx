@@ -307,20 +307,19 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'June 2017 - October 2023',
-    location: 'BlueSpruce Holdings',
-    title: 'Managing Partner & Technology Lead',
+    date: 'December 2025 - present',
+    location: 'Attorney Generals Alliance',
+    title: 'Technical Advisor, Partnership for Youth Online Safety',
     content: (
       <p>
-        Led the purchase, management and sale of 330 multifamily apartments while personally building and maintaining a
-        turnkey investor communication platform. Raised $5 million in equity capital, delivered 7% annual cash flow, and
-        architected the full technology stack for investor reporting and deal management.
+        Advise a bipartisan coalition of state Attorneys General and industry leaders on child online safety, with a
+        focus on decentralized identity (DID) for age verification and flagging AI-generated deepfakes.
       </p>
     ),
   },
   {
     date: 'October 2023 - present',
-    title: 'Independent Product Engineer',
+    title: 'Freelance Senior Software Engineer (Product)',
     content: (
       <div>
         <ul>
@@ -332,6 +331,13 @@ export const experience: TimelineItem[] = [
             React Router V7 and Firebase, while the backend leverages the Algorand blockchain for decentralized
             identity. The mobile app in development is built on Expo with a custom Algorand wallet providing verifiable
             credentials without centralized identity storage.
+          </li>
+          <li style={{ marginBottom: '0.5rem' }}>
+            <a className="underline" href="https://github.com/djscruggs/did-resolver-agent" target="_blank">
+              did-resolver-agent
+            </a>{' '}
+            — A chain-agnostic MCP server that lets humans issue cryptographically signed Verifiable Credentials to AI
+            agents, scoping their permissions without relying on a central authority.
           </li>
           <li style={{ marginBottom: '0.5rem' }}>
             <a className="underline" href="https://blockchainrangers.com/">
@@ -382,6 +388,18 @@ export const experience: TimelineItem[] = [
           </li>
         </ul>
       </div>
+    ),
+  },
+  {
+    date: 'June 2017 - October 2023',
+    location: 'BlueSpruce Holdings',
+    title: 'Managing Partner & Technology Lead',
+    content: (
+      <p>
+        Led the purchase, management and sale of 330 multifamily apartments while personally building and maintaining a
+        turnkey investor communication platform. Raised $5 million in equity capital, delivered 7% annual cash flow, and
+        architected the full technology stack for investor reporting and deal management.
+      </p>
     ),
   },
   {
