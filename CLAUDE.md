@@ -45,7 +45,7 @@ Subsections within the Resume section use `ResumeSection` (`src/components/Secti
 - Title: `text-xl font-bold uppercase text-neutral-800` with `border-b-2 border-orange-400` underline accent
 - Layout: 4-column grid, title in col 1, content in cols 2–4
 
-The `PredictiveIndex` section (`src/components/Sections/PredictiveIndex.tsx`) mirrors this exact pattern.
+The `Personality` section (`src/components/Sections/Resume/Personality.tsx`) mirrors this exact pattern.
 
 ### Page render order
 
@@ -59,8 +59,73 @@ Active-section tracking uses a scroll event listener (not `IntersectionObserver`
 
 ### Portfolio images
 
-Screenshots live in `src/images/portfolio/` numbered sequentially (`portfolio-7.png`, `portfolio-8.png`, …). Import and add to `portfolioItems` in `data.tsx`. Use `npx playwright@latest screenshot --viewport-size="1440,800" <url> <path>` to capture new ones at a width that avoids clipping.
+Screenshots live in `src/images/portfolio/` numbered sequentially (`portfolio-1.jpg`, `portfolio-2.png`, …, `portfolio-8.png`). Import and add to `portfolioItems` in `data.tsx`. Use `npx playwright@latest screenshot --viewport-size="1440,800" <url> <path>` to capture new ones at a width that avoids clipping.
 
 ### TypeScript strictness
 
 `noUnusedLocals` and `noUnusedParameters` are enforced. The linter runs Prettier first (`--write`), then ESLint (`--fix --max-warnings=0`). Always run `npm run lint` before committing.
+
+## Coding conventions
+
+### Use `as const` objects instead of TypeScript enums
+
+Define enum-like constants as plain objects with `as const`, then derive the type with `(typeof Obj)[keyof typeof Obj]`. Do not use the TypeScript `enum` keyword.
+
+```ts
+// Good
+export const SectionId = {
+  Hero: 'hero',
+  About: 'about',
+} as const;
+export type SectionId = (typeof SectionId)[keyof typeof SectionId];
+
+// Bad — do not use enum keyword
+export enum SectionId {
+  Hero = 'hero',
+  About = 'about',
+}
+```
+
+### Use `classnames` for conditional CSS classes
+
+Import `classnames` (aliased as `classNames`) for all conditional Tailwind class composition. Never concatenate className strings with template literals.
+
+```tsx
+// Good
+<section className={classNames(className, { 'px-4 py-16': !noPadding }, 'scroll-mt-14')}>
+
+// Bad
+<section className={`${className} ${!noPadding ? 'px-4 py-16' : ''} scroll-mt-14`}>
+```
+
+### Use composite keys for React list rendering
+
+When rendering arrays with `.map()`, use a composite key combining a meaningful field value with the index: `` `${item.title}-${index}` ``. Do not use index-only keys.
+
+```tsx
+// Good
+{experience.map((item, index) => (
+  <TimelineItem item={item} key={`${item.title}-${index}`} />
+))}
+```
+
+### Experience entries: reverse chronological order
+
+Entries in the `experience` array in `data.tsx` must be ordered most-recent-first (reverse chronological). Current/ongoing roles go at the top.
+
+### Data content formatting in data.tsx
+
+When adding work experience list items, use an anchor tag with `className="underline"` and `target="_blank"` for the project name, followed by `{' '}` and an em dash (`—`) before the description. Use `style={{ marginBottom: '0.5rem' }}` for list item spacing.
+
+```tsx
+<li style={{ marginBottom: '0.5rem' }}>
+  <a className="underline" href="https://example.com" target="_blank">
+    Project Name
+  </a>{' '}
+  — Description of the project here.
+</li>
+```
+
+## Commit conventions
+
+Use conventional commit prefixes (`feat:`, `fix:`, `refactor:`, `docs:`) in lowercase. For multi-change commits, use a bulleted list in the body. Include `Co-Authored-By` trailer when AI-assisted.
