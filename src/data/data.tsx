@@ -580,8 +580,8 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Location,
-      text: 'Fayetteville AR, USA',
-      href: 'https://www.google.com/maps/place/Fayetteville,+AR',
+      text: 'Oklahoma City, OK, USA',
+      href: 'https://www.google.com/maps/place/Oklahoma+City,+OK',
     },
     {
       type: ContactType.Github,
