@@ -69,22 +69,18 @@ export const heroData: Hero = {
   name: `Hi, I'm DJ!`,
   description: (
     <>
-      <p className="text-3xl font-bold text-stone-50">
-        I thrive in the gap between <span className="text-yellow">people</span> and <br />
-        the <span className="text-yellow">value</span> they seek from <span className="text-yellow">software</span>
-        .{' '}
-      </p>
       <div className="prose-sm text-stone-200 sm:prose-base lg:prose-lg w-2/3">
         <p>
-          I'm a <strong className="text-stone-100">serial entrepreneur with multiple exits</strong> and a{' '}
-          <strong>full stack software engineer</strong> in Oklahoma City.{' '}
-        </p>
-        <p>
-          In my spare time I like to walk my dog <strong className="text-stone-100">Monkey</strong> and host{' '}
+          I've spent 30 years building software, usally at the earliest stage, before there's a roadmap or a playbook.
+          These days I'm focused on a problem that matters: how do you verify age online without creating a surveillance
+          system? I founded{' '}
           <strong className="text-stone-100 underline">
-            <a href="https://interintellect.com/hosts/dj-scruggs">InterIntellect Salons</a>
-          </strong>
-          .
+            <a href="https://cardlessid.org/" target="_blank">
+              Cardless ID
+            </a>
+          </strong>{' '}
+          to answer that question, and I serve as Technical Advisor to a bipartisan coalition of state Attorneys General
+          on child online safety.
         </p>
       </div>
     </>
@@ -459,8 +455,8 @@ export const experience: TimelineItem[] = [
     content: (
       <p>
         Led a complex technical conversion from on-premises software to a multi-tenant SaaS architecture compliant with
-        HIPAA and related regulations for medical environments. Underlying technology included Ruby on Rails, PostgreSQL,
-        Cisco IP Phones, and Twilio.
+        HIPAA and related regulations for medical environments. Underlying technology included Ruby on Rails,
+        PostgreSQL, Cisco IP Phones, and Twilio.
       </p>
     ),
   },
