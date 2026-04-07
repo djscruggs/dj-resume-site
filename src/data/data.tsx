@@ -329,6 +329,13 @@ export const experience: TimelineItem[] = [
             credentials without centralized identity storage.
           </li>
           <li style={{ marginBottom: '0.5rem' }}>
+            <a className="underline" href="https://github.com/djscruggs/claude-architect-course" target="_blank">
+              Claude Architect Course
+            </a>{' '}
+            — A hands-on course teaching developers how to build production-grade applications with Claude AI, covering
+            prompt engineering, tool use, and agentic workflows.
+          </li>
+          <li style={{ marginBottom: '0.5rem' }}>
             <a className="underline" href="https://github.com/djscruggs/did-resolver-agent" target="_blank">
               did-resolver-agent
             </a>{' '}
@@ -442,7 +449,7 @@ export const experience: TimelineItem[] = [
     title: 'Technical Lead',
     content: (
       <p>
-        Stepped in to rescue a stalled project for a US client by rebuilding the agile process and managing distributed
+        Stepped in to rescue a stalled project for a US client by rebuilding the agile process and managing remote
         developers in South America and Europe. Translated complex requirements across language and timezone barriers to
         deliver a working product. Primary tech stack was Ruby on Rails with MySQL and PostgreSQL backends.
       </p>
