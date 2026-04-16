@@ -57,6 +57,19 @@ The `Personality` section (`src/components/Sections/Resume/Personality.tsx`) mir
 
 Active-section tracking uses a scroll event listener (not `IntersectionObserver`). `useNavObserver` in `src/hooks/useNavObserver.tsx` exists but is unused.
 
+- **Section removal requires coordinated changes across three files.** When removing a page section, changes must be made in three places simultaneously: (1) remove the SectionId from the navSections array in Header.tsx, (2) remove the component import and JSX usage from pages/index.tsx, and (3) optionally clean up the component file itself. Missing any of these leaves dead navigation links or unused imports.
+
+  **Good:**
+
+  // Header.tsx: remove SectionId.Personality from navSections
+  // pages/index.tsx: remove import and <Personality /> from JSX
+  // All three changes in a single commit
+
+  **Bad:**
+
+  // Only removing <Personality /> from pages/index.tsx
+  // but leaving SectionId.Personality in the Header navSections array
+
 ### Portfolio images
 
 Screenshots live in `src/images/portfolio/` numbered sequentially (`portfolio-1.jpg`, `portfolio-2.png`, …, `portfolio-8.png`). Import and add to `portfolioItems` in `data.tsx`. Use `npx playwright@latest screenshot --viewport-size="1440,800" <url> <path>` to capture new ones at a width that avoids clipping.
