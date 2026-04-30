@@ -53,13 +53,13 @@ The `Personality` section (`src/components/Sections/Resume/Personality.tsx`) mir
 
 ### Navigation
 
-`src/components/Sections/Header.tsx` drives the nav. To add a section to the menu, add the `SectionId` to the `navSections` array. The nav link label is the raw `SectionId` string value (e.g. `'personality'` renders as "personality"). There is no label override map — rename the `SectionId` value in `data.tsx` if you need a different display name.
+`src/components/Sections/Header.tsx` drives the nav. To add a section to the menu, add the `SectionId` to the `navSections` array. The nav link label is the raw `SectionId` string value (e.g. `'work'` renders as "work"). There is no label override map — rename the `SectionId` value in `data.tsx` if you need a different display name.
 
 Active-section tracking uses a scroll event listener (not `IntersectionObserver`). `useNavObserver` in `src/hooks/useNavObserver.tsx` exists but is unused.
 
 ### Portfolio images
 
-Screenshots live in `src/images/portfolio/` numbered sequentially (`portfolio-1.jpg`, `portfolio-2.png`, …, `portfolio-8.png`). Import and add to `portfolioItems` in `data.tsx`. Use `npx playwright@latest screenshot --viewport-size="1440,800" <url> <path>` to capture new ones at a width that avoids clipping.
+Screenshots live in `src/images/portfolio/` (`portfolio-2.png`, `portfolio-3.png`, …, `portfolio-8.png`). Import and add to `portfolioItems` in `data.tsx`. Use `npx playwright@latest screenshot --viewport-size="1440,800" <url> <path>` to capture new ones at a width that avoids clipping.
 
 ### TypeScript strictness
 
