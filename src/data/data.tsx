@@ -87,13 +87,13 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: `#${SectionId.Portfolio}`,
-      text: 'Portfolio',
+      href: `#${SectionId.Work}`,
+      text: 'Work History',
       primary: false,
     },
     {
-      href: `#${SectionId.Rates}`,
-      text: 'Rates',
+      href: `#${SectionId.Portfolio}`,
+      text: 'Portfolio',
       primary: false,
     },
     {
@@ -123,7 +123,7 @@ const calculate_age = (dob: string) => {
 };
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm a digital strategist, real estate investor, fractional CTO and full stack developer who excels at solving problems with code. I have multiple eight-figure exits and tons of learning experiences along the way. I love to work and expect to never stop building things.`,
+  description: `I'm a full-stack developer, digital strategist, and real estate investor who excels at solving problems with code. I have multiple eight-figure exits and tons of learning experiences along the way. I love to work and expect to never stop building things.`,
   aboutItems: [
     { label: 'Location', text: 'Oklahoma City, OK', Icon: MapIcon },
     { label: 'Age', text: calculate_age('1968-07-19').toString(), Icon: CalendarIcon },
@@ -334,6 +334,12 @@ export const experience: TimelineItem[] = [
             </a>{' '}
             — A hands-on course teaching developers how to build production-grade applications with Claude AI, covering
             prompt engineering, tool use, and agentic workflows.
+          </li>
+          <li style={{ marginBottom: '0.5rem' }}>
+            <a className="underline" href="https://interintellect.com/salons/claude-code-for-the-humanities" target="_blank">
+              Claude Code for the Humanities
+            </a>{' '}
+            — Monthly course on making AI tools accessible to non-engineers.
           </li>
           <li style={{ marginBottom: '0.5rem' }}>
             <a className="underline" href="https://github.com/djscruggs/did-resolver-agent" target="_blank">
